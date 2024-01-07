@@ -1,0 +1,4 @@
+filter_exec: "^.*(?:iTerm\\.app|Terminal\\.app|Visual Studio Code\\.app).*$"
+
+includes:
+  - "../match/_terminal.yml"

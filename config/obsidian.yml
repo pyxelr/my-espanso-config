@@ -1,0 +1,4 @@
+filter_title: "Obsidian"
+
+includes:
+  - "../match/_obsidian.yml"

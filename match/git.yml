@@ -1,0 +1,12 @@
+matches:
+  - triggers: [";;gitpullall ", ";;gpullall "] # pull all repositories in ~/REPOS/
+    replace: |
+              cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
+  - triggers: [";;gitreb ", ";;greb "]
+    replace: "git pull --rebase origin main"
+  - triggers: [";;gitmergetool ", ";;gmergetool "]
+    replace: "git mergetool"
+  - triggers: [";;gitrebcont ", ";;grebcont "]
+    replace: "git rebase --continue"
+  - triggers: [";;gitpushf ", ";;gpushf "]
+    replace: "git push --force"

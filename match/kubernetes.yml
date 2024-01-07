@@ -1,0 +1,18 @@
+# NOTE 1: replace "..." with your values
+# NOTE 2: consider defining snippets for generating your kubeconfig file
+matches:
+  - triggers: [";;k8spods ", ";;kpods "]
+    replace: "kubectl get pods --all-namespaces"
+  - triggers: [";;k8sservices ", ";;kservices "]
+    replace: "kubectl get services --all-namespaces"
+# ---
+  - trigger: ";;kubeconfgetcontexts " # get contexts from ~/.kube/config
+    replace: "kubectl config get-contexts"
+  - trigger: ";;kubeconfsetcontext " # set context
+    replace: "kubectl config use-context $|$"
+  - triggers: [";;kubeconfsetdevcontext ", ";;d "] # set dev context
+    replace: "kubectl config use-context ..."
+  - triggers: [";;kubeconfsetuatcontext ", ";;u "] # set dev context
+    replace: "kubectl config use-context ..."
+  - triggers: [";;kubeconfsetprodcontext ", ";;p "] # set dev context
+    replace: "kubectl config use-context ..."

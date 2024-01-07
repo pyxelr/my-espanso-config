@@ -1,0 +1,74 @@
+matches:
+# ===== FRENCH ACCENTS =====
+  - trigger: "``a "
+    replace: "à"
+    propagate_case: true
+  - trigger: "^^a "
+    replace: "â"
+    propagate_case: true
+  - trigger: "==ae "
+    replace: "æ"
+    propagate_case: true
+# ---
+  - trigger: ",,c "
+    replace: "ç"
+    propagate_case: true
+# ---
+  - trigger: "''e "
+    replace: "é"
+    propagate_case: true
+  - trigger: "``e "
+    replace: "è"
+    propagate_case: true
+  - trigger: "^^e "
+    replace: "ê"
+    propagate_case: true
+  - trigger: "::e "
+    replace: "ë"
+    propagate_case: true
+# ---
+  - trigger: "^^i "
+    replace: "î"
+    propagate_case: true
+  - trigger: "::i "
+    replace: "ï"
+    propagate_case: true
+# ---
+  - trigger: "^^o "
+    replace: "ô"
+    propagate_case: true
+  - trigger: "==oe "
+    replace: "œ"
+    propagate_case: true
+# ---
+  - trigger: "``u "
+    replace: "ù"
+    propagate_case: true
+  - trigger: "^^u "
+    replace: "û"
+    propagate_case: true
+  - trigger: "::u "
+    replace: "ü"
+    propagate_case: true
+# ---
+  - trigger: "::y "
+    replace: "ÿ"
+    propagate_case: true
+
+# ===== GERMAN ACCENTS =====
+  - trigger: "::a "
+    replace: "ä"
+    propagate_case: true
+# ---
+  - trigger: "::o "
+    replace: "ö"
+    propagate_case: true
+# ---
+  - trigger: "==ss "
+    replace: "ß"
+  - trigger: "==SS " # https://github.com/espanso/espanso/issues/1805
+    replace: "ẞ"
+# ---
+  # - trigger: "::u " # FR & GER char (no need to duplicate)
+  #   replace: "ü"
+  #   propagate_case: true
