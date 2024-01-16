@@ -12,9 +12,9 @@ matches:
 # OTHER CONFIG
   - trigger: ";;aliases "
     replace: "code ~/.aliases"
-  - trigger: ";;zshrc "
+  - triggers: [";;zshrc ", ";;zsh "]
     replace: "code ~/.zshrc"
-  - triggers: [";;sourcezshrc ", ";;reload "]
+  - triggers: [";;sourcezshrc ", ";;source ", ";;reload "]
     replace: "source ~/.zshrc"
   - trigger: ";;starship "
     replace: "code ~/.config/starship.toml"
