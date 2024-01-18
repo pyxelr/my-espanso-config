@@ -1,78 +1,78 @@
 matches:
 # ===== CONFIG =====
 # ESPANSO
-  - triggers: [";;espanso ", ";;esp "] # edit espanso config
+  - triggers: [";espanso ", ";esp "] # edit espanso config
     replace: "code ~/Library/Application\\ Support/espanso/"
-  - triggers: [";;espansozip ", ";;espzip "] # zip espanso config to ~/Downloads/
+  - triggers: [";espansozip ", ";espzip "] # zip espanso config to ~/Downloads/
     replace: "(cd ~/Library/Application\\ Support/espanso && zip -r ~/Downloads/espanso-mac.zip .)"
-  - triggers: [";;espansozipf ", ";;espzipf "] # zip espanso config to Obsidian vault
+  - triggers: [";espansozipf ", ";espzipf "] # zip espanso config to Obsidian vault
     replace: "(cd ~/Library/Application\\ Support/espanso && zip -r ~/Documents/obsidian-vault/files/espanso-mac.zip .)"
-  - triggers: [";;espansoupdate ", ";;espup "] # unzip espanso config from Obsidian vault
+  - triggers: [";espansoupdate ", ";espup "] # unzip espanso config from Obsidian vault
     replace: "unzip -o ~/Documents/obsidian-vault/files/espanso-mac.zip -d ~/Library/Application\\ Support/espanso/"
 # OTHER CONFIG
-  - trigger: ";;aliases "
+  - trigger: ";aliases "
     replace: "code ~/.aliases"
-  - triggers: [";;zshrc ", ";;zsh "]
+  - triggers: [";zshrc ", ";zsh "]
     replace: "code ~/.zshrc"
-  - triggers: [";;sourcezshrc ", ";;source ", ";;reload "]
+  - triggers: [";sourcezshrc ", ";source ", ";reload "]
     replace: "source ~/.zshrc"
-  - trigger: ";;starship "
+  - trigger: ";starship "
     replace: "code ~/.config/starship.toml"
 
 # ===== MACOS =====
-  - trigger: ";;bu "
+  - trigger: ";bu "
     replace: "brew upgrade"
-  - trigger: ";;finder " # open current path in Finder
+  - trigger: ";finder " # open current path in Finder
     replace: "open -a Finder ."
-  - triggers: [";;removedsstore ", ";;cleanup "] # remove .DS_STORE in current dir and subdirs
+  - triggers: [";removedsstore ", ";cleanup "] # remove .DS_STORE in current dir and subdirs
     replace: "find . -type f -name '*.DS_Store' -ls -delete"
 
 # ===== BASH =====
-  - trigger: ";;dec " # base64 decode
+  - trigger: ";dec " # base64 decode
     replace: "echo -n \"$|$\" | base64 -d"
-  - trigger: ";;enc " # base64 encode
+  - trigger: ";enc " # base64 encode
     replace: "echo -n \"$|$\" | base64"
 # ---
-  - trigger: ";;mdfi " # mdfind file
+  - trigger: ";mdfi " # mdfind file
     replace: "mdfind -name \"$|$\""
-  - trigger: ";;mdhfi " #mdfind file here
+  - trigger: ";mdhfi " #mdfind file here
     replace: "mdfind -onlyin . -name \"$|$\""
-  - trigger: ";;mdfo " # mdfind folder
+  - trigger: ";mdfo " # mdfind folder
     replace: "mdfind kind:folder \"$|$\""
-  - trigger: ";;mdhfo " #mdfind folder here
+  - trigger: ";mdhfo " #mdfind folder here
     replace: "mdfind -onlyin . kind:folder \"$|$\""
-  - trigger: ";;mdt " # mdfind text
+  - trigger: ";mdt " # mdfind text
     replace: "mdfind \"$|$\""
-  - trigger: ";;mdht " # mdfind text here
+  - trigger: ";mdht " # mdfind text here
     replace: "mdfind -onlyin . \"$|$\""
 # ---
-  - triggers: [";;printpath ", ";;path "] # PATH environment variables
+  - triggers: [";printpath ", ";path "] # PATH environment variables
     replace: "echo -e ${PATH//:/\\\\n}"
-  - triggers: [";;netstat ", ";;ports "] # network ports currently listening for incoming connections
+  - triggers: [";netstat ", ";ports "] # network ports currently listening for incoming connections
     replace: "netstat -a | grep -i 'listen'"
 # ---
-  - trigger: ";;websitestatus " # check website status
+  - trigger: ";websitestatus " # check website status
     replace: "curl -Is https://www.$|$ | head -n 1"
 
 # ===== PACKAGES =====
 # https://github.com/Canop/broot
-  - triggers: [";;broot ", ";;treee "]
+  - triggers: [";broot ", ";treee "]
     replace: "br -c :pt"
 # https://github.com/ogham/exa
-  - triggers: [";;exa ", ";;lisl "]
+  - triggers: [";exa ", ";lisl "]
     replace: "exa -hla --icons"
-  - triggers: [";;exatime ", ";;list "]
+  - triggers: [";exatime ", ";list "]
     replace: "exa -hlas time --icons"
 # https://github.com/andornaut/keylight
 # get IP (e.g. 192.168.1.100) by typing 'keylight' in terminal
-  - triggers: [";;keylighton ", ";;kon "]
+  - triggers: [";keylighton ", ";kon "]
     replace: "keylight --host ... --on"
-  - triggers: [";;keylightoff ", ";;koff "]
+  - triggers: [";keylightoff ", ";koff "]
     replace: "keylight --host ... --off"
 # https://github.com/yt-dlp/yt-dlp
-  - trigger: ";;yt " # download audio
+  - trigger: ";yt " # download audio
     replace: "yt-dlp --add-metadata --embed-thumbnail -o \"%(uploader)s - %(title)s.%(ext)s\" "
-  - trigger: ";;ytm " # extract mp3 from video 
+  - trigger: ";ytm " # extract mp3 from video 
     replace: "yt-dlp --embed-thumbnail --audio-quality 320k --extract-audio --no-part --audio-format mp3 --add-metadata -o \"%(uploader)s - %(title)s.%(ext)s\" "
-  - trigger: ";;ytv " # download video of best quality
+  - trigger: ";ytv " # download video of best quality
     replace: "yt-dlp -f bestvideo -ciw --write-thumbnail -o \"%(uploader)s - %(title)s.%(ext)s\" "

@@ -1,33 +1,33 @@
 matches:
-  - trigger: ";;tab " # table
+  - trigger: ";tab " # table
     replace: "| a$|$ | b |"
-  - trigger: ";;br " # line break
+  - trigger: ";br " # line break
     replace: "<br>"
-  - trigger: ";;lt " # <
+  - trigger: ";lt " # <
     replace: "&lt;"
-  - trigger: ";;gt " # >
+  - trigger: ";gt " # >
     replace: "&gt;"
-  - trigger: ";;em " # em space
+  - trigger: ";em " # em space
     replace: "&emsp;"
-  - trigger: ";;bre " # line break and em space
+  - trigger: ";bre " # line break and em space
     replace: "<br>&emsp;•"
-  - trigger: ";;bree " # line break and bullet point
+  - trigger: ";bree " # line break and bullet point
     replace: "<br>•"
-  - trigger: ";;bold "
+  - trigger: ";bold "
     replace: "<b>$|$</b>"
-  - trigger: ";;u " # underline
+  - trigger: ";u " # underline
     replace: "<u>$|$</u>"
-  - trigger: ";;bu " # bold and underline
+  - trigger: ";bu " # bold and underline
     replace: "<b><u>$|$</u></b>"
-  - trigger: ";;sup " # superscript
+  - trigger: ";sup " # superscript
     replace: "<sup>$|$</sup>"
-  - trigger: ";;sub " # subscript
+  - trigger: ";sub " # subscript
     replace: "<sub>$|$</sub>"
-  - trigger: ";;strike " # strikethrough
+  - trigger: ";strike " # strikethrough
     replace: "<s>$|$</s>"
-  - trigger: ";;url "
+  - trigger: ";url "
     replace: "<a href='url'>text$|$</a>"
-  - trigger: ";;callout "
+  - trigger: ";callout "
     replace: |
               > [!info]
               > all options:
@@ -45,21 +45,21 @@ matches:
               > !example
               > !quote/cite
               > https://help.obsidian.md/How+to/Use+callouts
-  - trigger: ";;info "
+  - trigger: ";info "
     replace: "## ℹ️ Info"
-  - trigger: ";;my "
+  - trigger: ";my "
     replace: "## 💬 My side"
-  - trigger: ";;notes "
+  - trigger: ";notes "
     replace: "## 📝 Notes"
-  - trigger: ";;questions "
+  - trigger: ";questions "
     replace: "## ❓ Questions"
-  - trigger: ";;homework "
+  - trigger: ";homework "
     replace: "## ⚠ Homework"
-  - trigger: ";;time "
+  - trigger: ";time "
     replace: "(⌚ –:– - –:–) [👤 ]"
-  - trigger: ";;timee "
+  - trigger: ";timee "
     replace: "(⌚ $|$)"
-  - trigger: ";;event "
+  - trigger: ";event "
     replace: |
               (⌚ –:– - –:–) [👤 ]
               
@@ -71,59 +71,59 @@ matches:
               
               -
 
-  - trigger: ";;e1 "
+  - trigger: ";e1 "
     replace: "⌚"
-  - trigger: ";;e2 "
+  - trigger: ";e2 "
     replace: "👤"
-  - trigger: ";;colors " # list of colors/highlights defined below
+  - trigger: ";colors " # list of colors/highlights defined below
     replace: |
               `colors` → b, bl/sbl, g, gr, olive, o/so, pu, pi, q (quality), r, t, y
               `highlights` → hb, hbl, hg, ho, hp, hq, hr, hy, hsy
 # ===== COLORS =====
-  - trigger: ";;b " # brown
+  - trigger: ";b " # brown
     replace: "<font style=\"color: #AF855C\">$|$</font>"
-  - trigger: ";;bl " # blue
+  - trigger: ";bl " # blue
     replace: "<font style=\"color: #6495ED\">$|$</font>"
-  - trigger: ";;sbl " # strong blue
+  - trigger: ";sbl " # strong blue
     replace: "<font style=\"color: #0096FF\">$|$</font>"
-  - trigger: ";;g " # green
+  - trigger: ";g " # green
     replace: "<font style=\"color: #50C878\">$|$</font>"
-  - trigger: ";;gr " # gray
+  - trigger: ";gr " # gray
     replace: "<font style=\"color: #A9A9A9\">$|$</font>"
-  - trigger: ";;olive " # olive
+  - trigger: ";olive " # olive
     replace: "<font style=\"color: #999966\">$|$</font>"
-  - trigger: ";;o " # orange
+  - trigger: ";o " # orange
     replace: "<font style=\"color: #E2B279\">$|$</font>"
-  - trigger: ";;so " # strong orange
+  - trigger: ";so " # strong orange
     replace: "<font style=\"color: #FFA500\">$|$</font>"
-  - trigger: ";;pu " # purple
+  - trigger: ";pu " # purple
     replace: "<font style=\"color: #9271BB\">$|$</font>"
-  - trigger: ";;pi " # pink
+  - trigger: ";pi " # pink
     replace: "<font style=\"color: #FFC0CB\">$|$</font>"
-  - trigger: ";;q " # quality (default)
+  - trigger: ";q " # quality (default)
     replace: "<font style=\"color: #858FB1\">$|$</font>"
-  - trigger: ";;r " # red
+  - trigger: ";r " # red
     replace: "<font style=\"color: #FF6666\">$|$</font>"
-  - trigger: ";;t " # teal
+  - trigger: ";t " # teal
     replace: "<font style=\"color: #40B5AD\">$|$</font>"
-  - trigger: ";;y " # yellow
+  - trigger: ";y " # yellow
     replace: "<font style=\"color: #ECC100\">$|$</font>"
 # ===== HIGHLIGHTS =====
-  - trigger: ";;hb " # highlight brown
+  - trigger: ";hb " # highlight brown
     replace: "<mark style=\"background: #B1997C;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;hbl " # highlight blue
+  - trigger: ";hbl " # highlight blue
     replace: "<mark style=\"background: #87CEEB;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;hg " # highlight green
+  - trigger: ";hg " # highlight green
     replace: "<mark style=\"background: #AED9B2;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;ho " # highlight orange
+  - trigger: ";ho " # highlight orange
     replace: "<mark style=\"background: #FBBF77;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;hp " # highlight pink
+  - trigger: ";hp " # highlight pink
     replace: "<mark style=\"background: #FFC0CB;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;hq " # highlight quality (default)
+  - trigger: ";hq " # highlight quality (default)
     replace: "<mark style=\"background: #858FB1;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;hr " # highlight red
+  - trigger: ";hr " # highlight red
     replace: "<mark style=\"background: #CD5C5C;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;hy " # highlight yellow
+  - trigger: ";hy " # highlight yellow
     replace: "<mark style=\"background: #F6D576;\"><font color=\"black\">$|$</font></mark>"
-  - trigger: ";;hsy " # highlight strong yellow
+  - trigger: ";hsy " # highlight strong yellow
     replace: "<mark style=\"background: #FFC701;\"><font color=\"black\">$|$</font></mark>"

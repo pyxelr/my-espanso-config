@@ -1,15 +1,15 @@
 matches:
-  - triggers: [";;dockerstop ", ";;dstop "]
+  - triggers: [";dockerstop ", ";dstop "]
     replace: "docker stop $(docker ps -a -q)"
-  - triggers: [";;dockerprune ", ";;dprune "]
+  - triggers: [";dockerprune ", ";dprune "]
     replace: "docker system prune -a --volumes"
-  - triggers: [";;dockerpull ", ";;dpull "]
+  - triggers: [";dockerpull ", ";dpull "]
     replace: "docker pull python:latest"
-  - triggers: [";;dockerbuildx ", ";;dbuildx "]
+  - triggers: [";dockerbuildx ", ";dbuildx "]
     replace: "docker buildx build --platform linux/amd64 --tag $|$:1.0 ."
-  - triggers: [";;dockerrun ", ";;drun "]
+  - triggers: [";dockerrun ", ";drun "]
     replace: "docker run -it $|$ bash"
-  - triggers: [";;dockermount ", ";;dmount "]
+  - triggers: [";dockermount ", ";dmount "]
     replace: "docker run --name $|$ -v $(pwd):/app -it python:latest bash"
-  - triggers:  [";;dockerexec ", ";;dexec "]
+  - triggers:  [";dockerexec ", ";dexec "]
     replace: "IMG=$|$ && docker start $IMG && docker exec -it $IMG bash"
