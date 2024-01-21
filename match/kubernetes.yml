@@ -6,10 +6,10 @@ matches:
   - triggers: [";k8sservices ", ";kservices "]
     replace: "kubectl get services --all-namespaces"
 # ---
-  - trigger: ";kubeconfgetcontexts " # get contexts from ~/.kube/config
+  - triggers: [";kubeconfgetcontexts ", ";kconfgetcontexts "] # get contexts from ~/.kube/config
     replace: "kubectl config get-contexts"
-  - trigger: ";kubeconfsetcontext " # set context
-    replace: "kubectl config use-context $|$"
+  - triggers: [";kubeconfsetcontext ", ";kcontext "] # set context
+    replace: "kubectl config use-context $(kubectl config get-contexts -o name | fzf --height=10 --prompt=\"Kubernetes Context> \")"
   - triggers: [";kubeconfsetdevcontext ", ";d "] # set dev context
     replace: "kubectl config use-context ..."
   - triggers: [";kubeconfsetuatcontext ", ";u "] # set dev context
