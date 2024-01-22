@@ -69,6 +69,9 @@ matches:
     replace: "keylight --host ... --on"
   - triggers: [";keylightoff ", ";koff "]
     replace: "keylight --host ... --off"
+# https://github.com/pypa/pipx
+  - triggers: [";pipxupgrade ", ";pipxup "]
+    replace: "pipx upgrade-all"
 # https://github.com/yt-dlp/yt-dlp
   - trigger: ";yt " # download audio
     replace: "yt-dlp --add-metadata --embed-thumbnail -o \"%(uploader)s - %(title)s.%(ext)s\" "
