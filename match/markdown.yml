@@ -1,0 +1,10 @@
+matches:
+  - triggers: [";markdowninfo ", ";minfo "]
+    replace: ">ℹ️ _$|$._"
+  - triggers: [";markdowntoc ", ";mtoc "] # automatic ToC for GitLab Flavored Markdown
+    replace: |
+              **Table of Contents**:
+
+              [TOC]
+
+              ---
