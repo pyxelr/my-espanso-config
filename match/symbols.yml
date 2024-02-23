@@ -5,6 +5,8 @@ matches:
     replace: "—"
   - trigger: ";ellipsis "
     replace: "…"
+  - trigger: ";approx "
+    replace: "≈"
   - trigger: ";quotepl "
     replace: "„”"
   - trigger: ";quoteen "
