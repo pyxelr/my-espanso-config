@@ -4,6 +4,9 @@ matches:
               cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
   - triggers: [";gitpickbranch ", ";gbranch "] # pick git branch
     replace: "git checkout $(git for-each-ref --format='%(refname:short)' refs/heads/ | fzf)"
+  - triggers: [";gitcommitempty ", ";gcempty "]
+    replace: "git commit --allow-empty -m 'Trigger Build'"
+# ---
   - triggers: [";gitreb ", ";greb "]
     replace: "git pull --rebase origin main"
   - triggers: [";gitmergetool ", ";gmergetool "]
@@ -12,5 +15,3 @@ matches:
     replace: "git rebase --continue"
   - triggers: [";gitpushf ", ";gpushf "]
     replace: "git push --force"
-  - triggers: [";gitcommitempty ", ";gcempty "]
-    replace: "git commit --allow-empty -m 'Trigger Build'"

@@ -12,7 +12,7 @@ matches:
     replace: "kubectl config use-context $(kubectl config get-contexts -o name | fzf --height=10 --prompt=\"Kubernetes Context> \")"
   - triggers: [";kubeconfsetdevcontext ", ";d "] # set dev context
     replace: "kubectl config use-context ..."
-  - triggers: [";kubeconfsetuatcontext ", ";u "] # set dev context
+  - triggers: [";kubeconfsetuatcontext ", ";u "] # set uat context
     replace: "kubectl config use-context ..."
-  - triggers: [";kubeconfsetprodcontext ", ";p "] # set dev context
+  - triggers: [";kubeconfsetprodcontext ", ";p "] # set prod context
     replace: "kubectl config use-context ..."
