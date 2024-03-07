@@ -12,3 +12,5 @@ matches:
     replace: "git rebase --continue"
   - triggers: [";gitpushf ", ";gpushf "]
     replace: "git push --force"
+  - triggers: [";gitcommitempty ", ";gcempty "]
+    replace: "git commit --allow-empty -m 'Trigger Build'"
