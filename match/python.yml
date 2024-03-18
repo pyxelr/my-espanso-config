@@ -1,0 +1,17 @@
+matches:
+  - triggers: [";pythonformat ", ";pyform "]
+    replace: "black --line-length=140 . && isort --profile black . && flake8 --max-line-length=140 . && mypy --strict --ignore-missing-imports ."
+# PRE-COMMIT
+  - triggers: [";pre-commitinstall", ";precinst "]
+    replace: "pre-commit install"
+  - triggers: [";pre-commitrun", ";precrun "]
+    replace: "pre-commit run --all-files"
+# PYENV
+  - triggers: [";pyenvversions", ";pyver "]
+    replace: "pyenv versions"
+  - triggers: [";pyenvglobal", ";pyglob "]
+    replace: "pyenv global "
+  - triggers: [";pyenvlocal", ";pyloc "]
+    replace: "pyenv local "
+  - triggers: [";pyenvinstall", ";pyinstall "]
+    replace: "pyenv install "

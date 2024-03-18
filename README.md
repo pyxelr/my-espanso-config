@@ -27,6 +27,7 @@ List of `match/` files:
 - `kubernetes.yml` - [Kubernetes](https://kubernetes.io/)/[kubectl](https://kubernetes.io/docs/reference/kubectl/) snippets
 - `languages.yml` - language accents (currently French and German)
 - `markdown.yml` - Markdown snippets
+- `python.yml` - Python snippets
 - `symbols.yml` - special characters, e.g. dash, ellipsis, bullet point, left arrow, ...
 
 > [!NOTE]  
