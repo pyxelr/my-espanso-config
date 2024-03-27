@@ -8,3 +8,15 @@ matches:
               [TOC]
 
               ---
+  - triggers: [";markdownsection ", ";msec "] # collapsible Markdown section
+    replace: |
+              <details>
+              <summary>
+
+              `$|$ 📜`
+
+              </summary>
+
+              XYZ
+
+              </details>
