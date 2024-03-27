@@ -5,8 +5,8 @@ matches:
     replace: "code ~/Library/Application\\ Support/espanso/"
   - triggers: [";espansozip ", ";espzip "] # zip espanso config to ~/Downloads/
     replace: "(cd ~/Library/Application\\ Support/espanso && zip -r ~/Downloads/espanso-mac.zip .)"
-  - triggers: [";espansozipf ", ";espzipf "] # zip espanso config to Obsidian vault
-    replace: "(cd ~/Library/Application\\ Support/espanso && zip -r ~/Documents/obsidian-vault/files/espanso-mac.zip .)"
+  - triggers: [";espansozipf ", ";espzipf "] # zip espanso config to Obsidian vault (before, rm, as zip cannot track removed files)
+    replace: "rm -f ~/Documents/obsidian-vault/files/espanso-mac.zip && (cd ~/Library/Application\\ Support/espanso && zip -r ~/Documents/obsidian-vault/files/espanso-mac.zip .)"
   - triggers: [";espansoupdate ", ";espup "] # unzip espanso config from Obsidian vault
     replace: "unzip -o ~/Documents/obsidian-vault/files/espanso-mac.zip -d ~/Library/Application\\ Support/espanso/"
 # OTHER CONFIG
