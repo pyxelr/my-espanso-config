@@ -69,6 +69,13 @@ matches:
     replace: "keylight --host ... --on"
   - triggers: [";keylightoff ", ";koff "]
     replace: "keylight --host ... --off"
+# https://github.com/pypa/pip
+  - triggers: [";piplist ", ";pipl "]
+    replace: "pip list && echo && pip check"
+  - triggers: [";pipoutdated ", ";pipout "]
+    replace: "pip list --outdated"
+  - triggers: [";pipupgrade ", ";pipup "]
+    replace: "pip install --upgrade "
 # https://github.com/pypa/pipx
   - triggers: [";pipxupgrade ", ";pipxup "]
     replace: "pipx upgrade-all"
