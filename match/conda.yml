@@ -1,9 +1,23 @@
 matches:
+  - triggers: [";condalist ", ";clist "]
+    replace: "conda list"
+  - triggers: [";condaenvlist ", ";cenvlist "]
+    replace: "conda env list"
+  - triggers: [";condaactivate ", ";cactivate "]
+    replace: "conda activate "
+  - triggers: [";condadeactivate ", ";cdeactivate "]
+    replace: "conda deactivate " 
   - triggers: [";condacreate ", ";ccreate "]
     replace: "conda create --name $|$ python=3.8 pip pycurl"
   - triggers: [";condaenvcreate ", ";cenvcreate "] # conda env create from file 
     replace: "conda env create -f environment.yaml"
+  - triggers: [";condaexport ", ";cenvexport "]
+    replace: "conda env export --no-builds > environment.yml"
   - triggers: [";condaremove ", ";cremove "]
     replace: "conda remove --name $|$ --all"
   - triggers: [";condaremovemultiple ", ";cremovemultiple "] # remove multiple conda envs (1, 2, ...)
     replace: "dir=\"$HOME/miniconda3/envs\" && for subdir in 1 2$|$; do rm -f -r \"$dir/$subdir\"; done"
+  - triggers: [";condaupdateconda ", ";cupdatec "]
+    replace: "conda update -c base conda"
+  - triggers: [";condaupdateall ", ";cupdatea "]
+    replace: "conda update --all"
