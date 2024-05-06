@@ -70,7 +70,6 @@ matches:
               ## 📝 Notes
               
               -
-
   - trigger: ";e1 "
     replace: "⌚"
   - trigger: ";e2 "

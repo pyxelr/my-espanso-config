@@ -11,5 +11,5 @@ matches:
     replace: "docker run -it $|$ bash"
   - triggers: [";dockermount ", ";dmount "]
     replace: "docker run --name $|$ -v $(pwd):/app -it python:latest bash"
-  - triggers:  [";dockerexec ", ";dexec "]
+  - triggers: [";dockerexec ", ";dexec "]
     replace: "IMG=$|$ && docker start $IMG && docker exec -it $IMG bash"
