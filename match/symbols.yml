@@ -3,7 +3,7 @@ matches:
     replace: "–"
   - trigger: ";ldash "
     replace: "—"
-  - trigger: ";ellipsis "
+  - triggers: [";ellipsis ", ";... "]
     replace: "…"
   - trigger: ";approx "
     replace: "≈"
@@ -17,13 +17,13 @@ matches:
     replace: "●"
   - triggers: [";rbullet ", ";rbul "]
     replace: "➤"
-  - trigger: ";left "
+  - triggers: [";left ", ";<< "]
     replace: "←"
-  - trigger: ";right "
+  - triggers: [";right ", ";>> "]
     replace: "→"
-  - trigger: ";up "
+  - triggers: [";up ", ";^^ "]
     replace: "↑"
-  - trigger: ";down "
+  - triggers: [";down ", ";vv "]
     replace: "↓"
   - trigger: ";tick "
     replace: "✓"
