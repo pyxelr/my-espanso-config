@@ -1,4 +1,6 @@
 matches:
+  - triggers: [";markdownlint ", ";mlint "]
+    replace: "markdownlint --fix \"**/*.md\""
   - triggers: [";markdowninfo ", ";minfo "]
     replace: ">ℹ️ _$|$._"
   - triggers: [";markdowntoc ", ";mtoc "] # automatic ToC for GitLab Flavored Markdown
