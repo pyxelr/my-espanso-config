@@ -6,6 +6,14 @@ matches:
     replace: "pre-commit install"
   - triggers: [";pre-commitrun", ";precrun "]
     replace: "pre-commit run --all-files"
+  - triggers: [";pre-commitrunone", ";precrunone "]
+    replace: "pre-commit run mypy$|$ --all-files"
+  # installation within a Docker container due to a hadolint issue: https://github.com/hadolint/hadolint/issues/886
+  - triggers: [";pre-commitinstallindocker", ";precinstdocker ", ";precinstd "]
+    replace: |
+              wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 && chmod +x /bin/hadolint;
+              pip install pre-commit;
+              pre-commit install
 # PYENV
   - triggers: [";pyenvversions", ";pyver "]
     replace: "pyenv versions"
