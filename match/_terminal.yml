@@ -22,6 +22,10 @@ matches:
 # ===== MACOS =====
   - triggers: [";brewup ", ";bu "]
     replace: "brew update && brew upgrade && brew upgrade --cask"
+  - triggers: [";brewlist ", ";bl "]
+    replace: "brew list"
+  - triggers: [";brewlistversions ", ";blv "]
+    replace: "echo \"# Homebrew Packages:\" && brew list --versions | column && echo && echo \"# Homebrew Cask Packages:\" && brew list --cask --versions | column"
   - trigger: ";finder " # open current path in Finder
     replace: "open -a Finder ."
   - triggers: [";removedsstore ", ";cleanup "] # remove .DS_STORE in current dir and subdirs
