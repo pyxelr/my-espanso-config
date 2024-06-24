@@ -20,12 +20,21 @@ matches:
     replace: "code ~/.config/starship.toml"
 
 # ===== MACOS =====
+# APPLICATIONS
+  - triggers: [";lsapplications ", ";lsapps "]
+    replace: "ls /Applications && find /Applications/* -maxdepth 0 -type d ! -name \"*.app\" -exec sh -c 'echo \"\"; echo \"{}:\"; ls \"{}\"' \\; && echo \"\"; echo \"Homebrew packages:\"; brew list"
+  - triggers: [";lsapplicationsnobrew ", ";lsappsnobl "]
+    replace: "ls /Applications && find /Applications/* -maxdepth 0 -type d ! -name \"*.app\" -exec sh -c 'echo \"\"; echo \"{}:\"; ls \"{}\"' \\; && echo \"\";"
+  - triggers: [";lsapplicationsall ", ";lsappsall "]
+    replace: "ls /Applications /System/Applications && find /Applications/* /System/Applications/* -maxdepth 0 -type d ! -name \"*.app\" -exec sh -c 'echo \"\"; echo \"{}:\"; ls \"{}\"\\' \\; && echo \"\"; echo \"Homebrew packages:\"; brew list"
+# BREW
   - triggers: [";brewup ", ";bu "]
     replace: "brew update && brew upgrade && brew upgrade --cask"
   - triggers: [";brewlist ", ";bl "]
     replace: "brew list"
   - triggers: [";brewlistversions ", ";blv "]
     replace: "echo \"# Homebrew Packages:\" && brew list --versions | column && echo && echo \"# Homebrew Cask Packages:\" && brew list --cask --versions | column"
+# OTHER
   - trigger: ";finder " # open current path in Finder
     replace: "open -a Finder ."
   - triggers: [";removedsstore ", ";cleanup "] # remove .DS_STORE in current dir and subdirs
