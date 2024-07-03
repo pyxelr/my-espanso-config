@@ -5,7 +5,7 @@ matches:
     replace: "kubectl get pods --all-namespaces"
   - triggers: [";k8sservices ", ";kservices "]
     replace: "kubectl get services --all-namespaces"
-# ---
+# ===== KUBECONFIG =====
   - triggers: [";kubeconfgetcontexts ", ";kconfgetcontexts "] # get contexts from ~/.kube/config
     replace: "kubectl config get-contexts"
   - triggers: [";kubeconfsetcontext ", ";kcontext "] # set context

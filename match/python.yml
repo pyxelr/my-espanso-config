@@ -3,7 +3,7 @@ matches:
     replace: "python -m pip install -U "
   - triggers: [";pythonformat ", ";pyform "]
     replace: "black --line-length=140 . && isort --profile black . && flake8 --max-line-length=140 . && mypy --strict --ignore-missing-imports ."
-# PRE-COMMIT
+# ===== PRE-COMMIT =====
   - triggers: [";pre-commitinstall", ";precinst "]
     replace: "pre-commit install"
   - triggers: [";pre-commitrun", ";precrun "]
@@ -16,7 +16,7 @@ matches:
               wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 && chmod +x /bin/hadolint;
               pip install pre-commit;
               pre-commit install
-# PYENV
+# ===== PYENV =====
   - triggers: [";pyenvversions", ";pyver "]
     replace: "pyenv versions"
   - triggers: [";pyenvglobal", ";pyglob "]
