@@ -91,7 +91,7 @@ matches:
   - triggers: [";exatime ", ";list "]
     replace: "exa -hlas time --icons"
 # https://github.com/andornaut/keylight
-# get IP (e.g. 192.168.1.100) by typing 'keylight' in terminal
+## get IP (e.g. 192.168.1.100) by typing 'keylight' in terminal
   - triggers: [";keylighton ", ";kon "]
     replace: "keylight --host ... --on"
   - triggers: [";keylightoff ", ";koff "]
