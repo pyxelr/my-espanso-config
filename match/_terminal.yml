@@ -9,13 +9,27 @@ matches:
     replace: "rm -f ~/Documents/obsidian-vault/files/espanso-mac.zip && (cd ~/Library/Application\\ Support/espanso && zip -r ~/Documents/obsidian-vault/files/espanso-mac.zip .)"
   - triggers: [";espansoupdate ", ";espup "] # unzip espanso config from Obsidian vault
     replace: "unzip -o ~/Documents/obsidian-vault/files/espanso-mac.zip -d ~/Library/Application\\ Support/espanso/"
-# OTHER CONFIG
+# ALIASES
   - trigger: ";aliases "
     replace: "code ~/.aliases"
+  - trigger: ";aliaseszip " # zip ~/.aliases to Obsidian vault
+    replace: "(cd ~ && zip -r ~/Documents/obsidian-vault/files/aliases.zip .aliases)"
+  - trigger: ";aliasesupdate " # unzip ~/.aliases from Obsidian vault
+    replace: "unzip -o ~/Documents/obsidian-vault/files/aliases.zip -d ~/"
+# ZSHRC
   - triggers: [";zshrc ", ";zsh "]
     replace: "code ~/.zshrc"
   - triggers: [";sourcezshrc ", ";source ", ";reload "]
     replace: "source ~/.zshrc"
+  - triggers: [";zshrczipwork ", ";zshzipwork "] # zip ~/.zshrc (work) to Obsidian vault
+    replace: "(cd ~ && zip -r ~/Documents/obsidian-vault/files/zshrc-work.zip .zshrc)"
+  - triggers: [";zshrcupdatework ", ";zshupwork "] # unzip ~/.zshrc (work) from Obsidian vault
+    replace: "unzip -o ~/Documents/obsidian-vault/files/zshrc-personal.zip -d ~/"
+  - triggers: [";zshrczippersonal ", ";zshzippersonal "] # zip ~/.zshrc (personal) to Obsidian vault
+    replace: "(cd ~ && zip -r ~/Documents/obsidian-vault/files/zshrc-personal.zip .zshrc)"
+  - triggers: [";zshrcupdatepersonal ", ";zshuppersonal "] # unzip ~/.zshrc (personal) from Obsidian vault
+    replace: "unzip -o ~/Documents/obsidian-vault/files/zshrc-personal.zip -d ~/"
+# OTHER CONFIG
   - trigger: ";starship "
     replace: "code ~/.config/starship.toml"
 
