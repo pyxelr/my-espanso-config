@@ -1,6 +1,7 @@
 matches:
   - triggers: [";condalist ", ";clist "]
     replace: "conda list"
+# ===== ENVIRONMENT =====
   - triggers: [";condaenvlist ", ";cenvlist "]
     replace: "conda env list"
   - triggers: [";condaactivate ", ";cactivate "]
@@ -17,7 +18,12 @@ matches:
     replace: "conda remove --name $|$ --all"
   - triggers: [";condaremovemultiple ", ";cremovemultiple "] # remove multiple conda envs (1, 2, ...)
     replace: "dir=\"$HOME/miniconda3/envs\" && for subdir in 1 2$|$; do rm -f -r \"$dir/$subdir\"; done"
-  - triggers: [";condaupdateconda ", ";cupdatec "]
-    replace: "conda update -c base conda"
-  - triggers: [";condaupdateall ", ";cupdatea "]
-    replace: "conda update --all"
+# ===== UPDATE =====
+  - triggers: [";condaupdateconda ", ";cupdate "]
+    replace: "conda update conda && conda update --all"
+  - triggers: [";condasearchpython ", ";csearchpy "]
+    replace: "conda search python"
+  - triggers: [";condainstallpython ", ";cinstallpy "]
+    replace: "conda install python=3.12"
+  - triggers: [";condaupdatepython ", ";cupdatepy "]
+    replace: "conda update python"
