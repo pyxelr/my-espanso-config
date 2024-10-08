@@ -19,7 +19,7 @@ matches:
   - triggers: [";condaremovemultiple ", ";cremovemultiple "] # remove multiple conda envs (1, 2, ...)
     replace: "dir=\"$HOME/miniconda3/envs\" && for subdir in 1 2$|$; do rm -f -r \"$dir/$subdir\"; done"
 # ===== UPDATE =====
-  - triggers: [";condaupdateconda ", ";cupdate "]
+  - triggers: [";condaupdate ", ";cupdate "]
     replace: "conda update conda && conda update --all"
   - triggers: [";condasearchpython ", ";csearchpy "]
     replace: "conda search python"
