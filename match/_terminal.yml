@@ -108,7 +108,7 @@ matches:
     replace: "pipx upgrade-all"
 # https://github.com/yt-dlp/yt-dlp
   - trigger: ";yt " # download audio
-    replace: "yt-dlp --add-metadata --embed-thumbnail -o \"%(uploader)s - %(title)s.%(ext)s\" "
+    replace: "yt-dlp --add-metadata --embed-thumbnail -o \"%(artist)s - %(title)s.%(ext)s\" "
   - trigger: ";ytm " # extract mp3 from video 
     replace: "yt-dlp --embed-thumbnail --audio-quality 320k --extract-audio --no-part --audio-format mp3 --add-metadata -o \"%(uploader)s - %(title)s.%(ext)s\" "
   - trigger: ";ytv " # download video of best quality
