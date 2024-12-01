@@ -13,6 +13,8 @@ matches:
     replace: "<br>&emsp;•"
   - trigger: ";bree " # line break and bullet point
     replace: "<br>•"
+  - triggers: [";subullet ", ";subbul ", ";sbul "] # sub-bullet
+    replace: "&emsp;•"
   - trigger: ";bold "
     replace: "<b>$|$</b>"
   - trigger: ";u " # underline
