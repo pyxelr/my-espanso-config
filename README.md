@@ -19,7 +19,7 @@ Generally, all the `*.yml` files attempt to be self-explanatory with a couple of
 List of `match/` files:
 
 - `_obsidian.yml` - [Obsidian](https://obsidian.md/) snippets, e.g. for font coloring
-- `_terminal.yml` - snippets that function only within [iTerm](https://iterm2.com/), default macOS Terminal or [VS Code](https://code.visualstudio.com/), e.g. for editing/syncing espanso config, or for file/folder search
+- `_terminal.yml` - snippets that function only within [iTerm](https://iterm2.com/), default macOS Terminal, [Warp](https://www.warp.dev/), or [VS Code](https://code.visualstudio.com/), e.g. for editing/syncing espanso config, or for file/folder search
 - `base.yml` - default match file
 - `conda.yml` - [Conda](https://github.com/conda/conda) snippets
 - `docker.yml` - [Docker](https://www.docker.com/) snippets
