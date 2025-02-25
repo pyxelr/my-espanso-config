@@ -5,7 +5,7 @@ matches:
   - triggers: [";gitpickbranch ", ";gbranch "] # pick git branch
     replace: "git checkout $(git for-each-ref --format='%(refname:short)' refs/heads/ | fzf)"
   - triggers: [";gitcommitempty ", ";gcempty "]
-    replace: "git commit --allow-empty -m 'Trigger Build'"
+    replace: "git commit --allow-empty -m 'chore: trigger build'"
 # ===== REBASE =====
   - triggers: [";gitreb ", ";greb "]
     replace: "git pull --rebase origin main"
