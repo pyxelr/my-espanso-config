@@ -10,8 +10,8 @@ matches:
   - triggers: [";dockerbuildxfile ", ";dbuildxfile "]
     replace: "docker buildx build --platform linux/amd64 --tag $|$:1.0 -f docker/Dockerfile ."
   - triggers: [";dockerrun ", ";drun "]
-    replace: "docker run -it $|$ bash"
+    replace: "docker run --platform linux/amd64 -it $|$ bash"
   - triggers: [";dockermount ", ";dmount "]
-    replace: "docker run --name $|$ -v $(pwd):/app -it python:latest bash"
+    replace: "docker run --name $|$ -v $(pwd):/app --platform linux/amd64 -it python:latest bash"
   - triggers: [";dockerexec ", ";dexec "]
     replace: "IMG=$|$ && docker start $IMG && docker exec -it $IMG bash"
