@@ -5,6 +5,12 @@ matches:
     replace: "—"
   - triggers: [";ellipsis ", ";... "]
     replace: "…"
+  - triggers: [";lessorequal ", ";<= "]
+    replace: "≤"
+  - triggers: [";moreorequal ", ";>= "]
+    replace: "≥"
+  - triggers: [";notequal ", ";<> "]
+    replace: "≠"
   - trigger: ";approx "
     replace: "≈"
   - trigger: ";quotepl "
