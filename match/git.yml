@@ -9,7 +9,7 @@ matches:
 # ===== REBASE =====
   - triggers: [";gitreb ", ";greb "]
     replace: "git pull --rebase origin main"
-  - triggers: [";gitmergetool ", ";gmergetool "]
+  - triggers: [";gitrebmergetool ", ";grebmergetool "]
     replace: "git mergetool"
   - triggers: [";gitrebcont ", ";grebcont "]
     replace: "git rebase --continue"
