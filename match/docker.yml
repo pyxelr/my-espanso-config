@@ -1,6 +1,6 @@
 matches:
   - triggers: [";dockerstop ", ";dstop "]
-    replace: "docker stop $(docker ps -a -q)"
+    replace: "docker ps -a -q | xargs -r docker stop"
   - triggers: [";dockerprune ", ";dprune "]
     replace: "docker system prune -a --volumes"
   - triggers: [";dockerpull ", ";dpull "]
