@@ -102,7 +102,7 @@ matches:
   - triggers: [";pipoutdated ", ";pipout "]
     replace: "pip list --outdated"
   - triggers: [";pipupgrade ", ";pipup "]
-    replace: "pip install --upgrade "
+    replace: "pip install --upgrade pip"
 # https://github.com/pypa/pipx
   - triggers: [";pipxupgrade ", ";pipxup "]
     replace: "pipx upgrade-all"
@@ -115,3 +115,5 @@ matches:
     replace: "yt-dlp --embed-thumbnail --audio-quality 320k --extract-audio --no-part --audio-format mp3 --add-metadata --download-sections \"*01:00-02:00\" --force-keyframes-at-cuts -o \"%(uploader)s - %(title)s.%(ext)s\" "
   - trigger: ";ytv " # download video of best quality
     replace: "yt-dlp -f bestvideo -ciw --write-thumbnail -o \"%(uploader)s - %(title)s.%(ext)s\" "
+  - trigger: ";ytup " # upgrade yt-dlp
+    replace: "pip install --upgrade \"yt-dlp[default]\""
