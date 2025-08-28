@@ -1,6 +1,4 @@
 matches:
-  - triggers: [";pipupgrade", ";pipu "]
-    replace: "python -m pip install -U "
   - triggers: [";pythonformat ", ";pyform "]
     replace: "black --line-length=140 . && isort --profile black . && flake8 --max-line-length=140 . && mypy --strict --ignore-missing-imports ."
 # ===== PRE-COMMIT =====

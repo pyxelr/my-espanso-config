@@ -101,8 +101,10 @@ matches:
     replace: "pip list && echo && pip check"
   - triggers: [";pipoutdated ", ";pipout "]
     replace: "pip list --outdated"
-  - triggers: [";pipupgrade ", ";pipup "]
-    replace: "pip install --upgrade pip"
+  - triggers: [";pipupgrade", ";pipup "]
+    replace: "pip install -U "
+  - triggers: [";pipupgradepip ", ";pipupp "]
+    replace: "pip install -U pip"
 # https://github.com/pypa/pipx
   - triggers: [";pipxupgrade ", ";pipxup "]
     replace: "pipx upgrade-all"
