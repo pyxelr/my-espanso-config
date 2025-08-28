@@ -98,13 +98,13 @@ matches:
     replace: "keylight --host ... --off"
 # https://github.com/pypa/pip
   - triggers: [";piplist ", ";pipl "]
-    replace: "pip list && echo && pip check"
+    replace: "python -m pip list && echo && python -m pip check"
   - triggers: [";pipoutdated ", ";pipout "]
-    replace: "pip list --outdated"
+    replace: "python -m pip list --outdated"
   - triggers: [";pipupgrade", ";pipup "]
-    replace: "pip install -U "
+    replace: "python -m pip install -U "
   - triggers: [";pipupgradepip ", ";pipupp "]
-    replace: "pip install -U pip"
+    replace: "python -m pip install -U pip"
 # https://github.com/pypa/pipx
   - triggers: [";pipxupgrade ", ";pipxup "]
     replace: "pipx upgrade-all"
@@ -118,4 +118,4 @@ matches:
   - trigger: ";ytv " # download video of best quality
     replace: "yt-dlp -f bestvideo -ciw --write-thumbnail -o \"%(uploader)s - %(title)s.%(ext)s\" "
   - trigger: ";ytup " # upgrade yt-dlp
-    replace: "pip install --upgrade \"yt-dlp[default]\""
+    replace: "python -m pip install -U \"yt-dlp[default]\""
