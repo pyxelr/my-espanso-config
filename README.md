@@ -23,6 +23,7 @@ List of `match/` files:
 - `base.yml` - default match file
 - `conda.yml` - [Conda](https://github.com/conda/conda) snippets
 - `docker.yml` - [Docker](https://www.docker.com/) snippets
+- `emojis.yml` - commonly used emojis
 - `git.yml` - [Git](https://git-scm.com/) snippets
 - `kubernetes.yml` - [Kubernetes](https://kubernetes.io/)/[kubectl](https://kubernetes.io/docs/reference/kubectl/) snippets
 - `languages.yml` - language accents (currently French and German)
