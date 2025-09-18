@@ -10,6 +10,8 @@ matches:
     replace: "ℹ️"
   - triggers: [";emojiimportant ", ";important ", ";star "]
     replace: "⭐"
+  - triggers: [";emojiplus ", ";plus ", ";add "]
+    replace: "➕"
 # ===== REACTION =====
   - triggers: [";emojithumbsup ", ";thumbsup ", ";like "]
     replace: "👍"
@@ -23,6 +25,10 @@ matches:
     replace: "🔥"
   - triggers: [";emojicelebrate ", ";celebrate ", ";tada ", ";party "]
     replace: "🎉"
+  - triggers: [";emojisparkles ", ";sparkles ", ";magic "]
+    replace: "✨"
+  - triggers: [";emojirocket ", ";rocket ", ";deploy "]
+    replace: "🚀"
   - triggers: [";emojisalute ", ";salute "]  
     replace: "🫡"
   - triggers: [";emojifacepalm ", ";facepalm "]
@@ -57,17 +63,23 @@ matches:
     replace: "💻"
   - triggers: [";emojicode ", ";code "]
     replace: "🧑🏻‍💻"
-  - triggers: [";emojiservice ", ";service "]
+  - triggers: [";emojiservice ", ";service ", ";wrench ", ";fix "]
     replace: "🔧"
+  - triggers: [";emojirecycle ", ";recycle ", ";refactor "]
+    replace: "♻️"
 # ===== BUSINESS/WORK =====
-  - triggers: [";emojibusiness ", ";business "]
+  - triggers: [";emojibriefcase ", ";briefcase ", ";business "]
     replace: "💼"
-  - triggers: [";emojisuit ", ";suit ", ";necktie ", ";job "]
+  - triggers: [";emojinecktie ", ";necktie ", ";suit ", ";job "]
     replace: "👔"
-  - triggers: [";emojiinvestments ", ";investments ", ";stocks "]
+  - triggers: [";emojiinvestment ", ";investment ", ";invest "]
     replace: "📈"
   - triggers: [";emojiidea ", ";idea ", ";bulb "]
     replace: "💡"
+  - triggers: [";emojitime ", ";time ", ";clock "]
+    replace: "⌚"
+  - triggers: [";emojiperson ", ";person "]
+    replace: "👤"
 # ===== ACTIVITIES =====
   - triggers: [";emojilearn ", ";learn ", ";study "]
     replace: "📚"
@@ -83,6 +95,8 @@ matches:
     replace: "🎹"
   - triggers: [";emojigame ", ";game "]
     replace: "🎮"
+  - triggers: [";emojinote ", ";note ", ";memo "]
+    replace: "📝"
 # ===== PERSONAL =====
   - triggers: [";emojihello ", ";emojibye ", ";wave ", ";bye "]
     replace: "👋"
