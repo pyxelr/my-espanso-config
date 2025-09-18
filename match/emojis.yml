@@ -1,10 +1,10 @@
 matches:
 # ===== STATUS =====
-  - triggers: [";emojiyes ", ";yes "]
+  - triggers: [";emojiyes ", ";yes ", ";check ", ";done "]
     replace: "✅"
   - triggers: [";emojino ", ";no "]
     replace: "❌"
-  - triggers: [";emojiwarning ", ";warning "]
+  - triggers: [";emojiwarning ", ";warning ", ";warn "]
     replace: "⚠️"
   - triggers: [";emojiinfo ", ";info "]
     replace: "ℹ️"
@@ -65,7 +65,7 @@ matches:
     replace: "🧑🏻‍💻"
   - triggers: [";emojiservice ", ";service ", ";wrench ", ";fix "]
     replace: "🔧"
-  - triggers: [";emojirecycle ", ";recycle ", ";refactor "]
+  - triggers: [";emojirecycle ", ";recycle ", ";refactor ", ;refine "]
     replace: "♻️"
 # ===== BUSINESS/WORK =====
   - triggers: [";emojibriefcase ", ";briefcase ", ";business "]
