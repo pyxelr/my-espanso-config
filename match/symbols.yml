@@ -1,7 +1,7 @@
 matches:
-  - trigger: ";dash "
+  - triggers: [";endash ", ";en "]
     replace: "–"
-  - trigger: ";ldash "
+  - triggers: [";emdash ", ";em "]
     replace: "—"
   - triggers: [";ellipsis ", ";... "]
     replace: "…"
