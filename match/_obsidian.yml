@@ -7,7 +7,7 @@ matches:
     replace: "&lt;"
   - trigger: ";gt " # >
     replace: "&gt;"
-  - trigger: ";em " # em space
+  - triggers: [";emspace ", ";emsp "] # em space
     replace: "&emsp;"
   - trigger: ";bre " # line break and em space
     replace: "<br>&emsp;•"
