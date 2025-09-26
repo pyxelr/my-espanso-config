@@ -53,6 +53,8 @@ matches:
     replace: "open -a Finder ."
   - triggers: [";removedsstore ", ";cleanup "] # remove .DS_STORE in current dir and subdirs
     replace: "find . -type f -name '*.DS_Store' -ls -delete"
+  - triggers: [";pbpaste ", ";pbp "]
+    replace: "pbpaste | tee \"$|$\""
 
 # ===== BASH =====
   - trigger: ";dec " # base64 decode
