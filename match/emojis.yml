@@ -78,6 +78,8 @@ matches:
     replace: "💡"
   - triggers: [";emojitime ", ";time ", ";clock "]
     replace: "⌚"
+  - triggers: [";emojiwait ", ";wait ", ";hourglass ", ";hglass "]
+    replace: "⏳"
   - triggers: [";emojiperson ", ";person "]
     replace: "👤"
 # ===== ACTIVITIES =====
