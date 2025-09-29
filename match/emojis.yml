@@ -35,6 +35,8 @@ matches:
     replace: "🤦🏻‍♂️"
   - triggers: [";emojipray ", ";pray "]
     replace: "🛐"
+  - triggers: [";emojipray2 ", ";pray2 "]
+    replace: "🙏"
 # ===== MOOD =====
   - triggers: [";emojihappy ", ";happy "]
     replace: "🙂"
@@ -67,6 +69,14 @@ matches:
     replace: "🔧"
   - triggers: [";emojirecycle ", ";recycle ", ";refactor ", ";refine "]
     replace: "♻️"
+  - triggers: [";emojilock ", ";lock ", ";secure ", ";encrypted "]
+    replace: "🔐"
+  - triggers: [";emojiunlock ", ";unlock ", ";insecure ", ";decrypted "]
+    replace: "🔓"
+  - triggers: [";emojikey ", ";key ", ";password "]
+    replace: "🔑"
+  - triggers: [";emojihacker ", ";hacker ", ";hack "]
+    replace: "👾"
 # ===== BUSINESS/WORK =====
   - triggers: [";emojibriefcase ", ";briefcase ", ";business "]
     replace: "💼"
@@ -101,6 +111,8 @@ matches:
     replace: "🎨"
   - triggers: [";emojinote ", ";note ", ";write "]
     replace: "📝"
+  - triggers: [";emojiquiet ", ";quiet ", ";silence ", ";shh "]
+    replace: "🤫"
 # ===== PERSONAL =====
   - triggers: [";emojihello ", ";emojibye ", ";wave ", ";bye "]
     replace: "👋"
@@ -108,6 +120,10 @@ matches:
     replace: "💘"
   - triggers: [";emojihealth ", ";health "]
     replace: "💚"
+  - triggers: [";emojistrong ", ";strong ", ";arm ", ";biceps "]
+    replace: "💪"
+  - triggers: [";emojitrash ", ";trash ", ";garbage ", ";delete ", ";remove "]
+    replace: "🚮"
 # ===== SPORT =====
   - triggers: [";emojirun ", ";run ", ";running "]
     replace: "🏃🏻‍♂️"
