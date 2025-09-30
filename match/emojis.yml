@@ -78,7 +78,7 @@ matches:
   - triggers: [";emojihacker ", ";hacker ", ";hack "]
     replace: "👾"
 # ===== BUSINESS/WORK =====
-  - triggers: [";emojibriefcase ", ";briefcase ", ";business "]
+  - triggers: [";emojibriefcase ", ";briefcase ", ";case ", ";business "]
     replace: "💼"
   - triggers: [";emojinecktie ", ";necktie ", ";suit ", ";job "]
     replace: "👔"
