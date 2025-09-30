@@ -69,6 +69,8 @@ matches:
     replace: "🔧"
   - triggers: [";emojirecycle ", ";recycle ", ";refactor ", ";refine "]
     replace: "♻️"
+  - triggers: [";emojisetup ", ";setup ", ";cog "]
+    replace: "⚙️"
   - triggers: [";emojilock ", ";lock ", ";secure ", ";encrypted "]
     replace: "🔐"
   - triggers: [";emojiunlock ", ";unlock ", ";insecure ", ";decrypted "]
