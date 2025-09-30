@@ -109,10 +109,12 @@ matches:
     replace: "🎹"
   - triggers: [";emojigame ", ";game "]
     replace: "🎮"
-  - triggers: [";emojimart ", ";art ", ";draw "]
+  - triggers: [";emojiart ", ";art ", ";draw "]
     replace: "🎨"
   - triggers: [";emojinote ", ";note ", ";write "]
     replace: "📝"
+  - triggers: [";emojicomment ", ";comment ", ";chat ", ";message "]
+    replace: "💬"
   - triggers: [";emojiquiet ", ";quiet ", ";silence ", ";shh "]
     replace: "🤫"
 # ===== PERSONAL =====
