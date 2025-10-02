@@ -62,7 +62,9 @@ matches:
     replace: "🤣"
   - triggers: [";emojithink ", ";think ", ";hmm ", ";?? "]
     replace: "🤔"
-  - triggers: [";emojitired ", ";tired ", ";sleep ", ";dream ", ";zzz "]
+  - triggers: [";emojiyawn ", ";yawn ", ";tired "]
+    replace: "🥱"
+  - triggers: [";emojisleep ", ";sleepy ", ";sleep ", ";dream ", ";zzz "]
     replace: "😴"
   - triggers: [";emojisad ", ";sad ", ";:( "]
     replace: "🙁"
@@ -72,6 +74,18 @@ matches:
     replace: "😭"
   - triggers: [";emojiscream ", ";scream ", ";scared ", ";shock ", ";omg "]
     replace: "😱"
+  - triggers: [";emojisweat ", ";sweat "]
+    replace: "😅"
+  - triggers: [";emojisweat2 ", ";sweat2 "]
+    replace: "😓"
+  - triggers: [";emojisweat3 ", ";sweat3 ", ";panic ", ";stress "]
+    replace: "😰"
+  - triggers: [";emojiexhale ", ";exhale ", ";sigh ", ";relief ", ";uff "]
+    replace: "😮‍💨"
+  - triggers: [";emojiwink ", ";wink ", ";;) "]
+    replace: "😉"
+  - triggers: [";emojigoofy ", ";goofy ", ";crazy "]
+    replace: "🤪"
 # ===== TECH =====
   - triggers: [";emojibug ", ";bug "]
     replace: "🐛"
