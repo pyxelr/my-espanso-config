@@ -8,7 +8,7 @@ matches:
     replace: "⚠️"
   - triggers: [";emojiinfo ", ";info "]
     replace: "ℹ️"
-  - triggers: [";emojiplus ", ";plus ", ";add "]
+  - triggers: [";emojiplus ", ";plus ", ";add ", ";+ "]
     replace: "➕"
   - triggers: [";emojistar ", ";star ", ";important ", ";favorite ", ";fav ", ";p3 "]
     replace: "⭐"
@@ -47,6 +47,10 @@ matches:
     replace: "🛐"
   - triggers: [";emojipray2 ", ";pray2 "]
     replace: "🙏"
+  - triggers: [";emojiclap ", ";clap ", ";applause ", ";bravo "]
+    replace: "👏"
+  - triggers: [";emojipoop ", ";poop ", ";shit "]
+    replace: "💩"
 # ===== MOOD =====
   - triggers: [";emojihappy ", ";happy ", ";:) "]
     replace: "🙂"
@@ -66,6 +70,8 @@ matches:
     replace: "😢"
   - triggers: [";emojicry ", ";cry ", ";sob ", ";;'( "]
     replace: "😭"
+  - triggers: [";emojiscream ", ";scream ", ";scared ", ";shock ", ";omg "]
+    replace: "😱"
 # ===== TECH =====
   - triggers: [";emojibug ", ";bug "]
     replace: "🐛"
@@ -91,6 +97,8 @@ matches:
     replace: "🔑"
   - triggers: [";emojihacker ", ";hacker ", ";hack "]
     replace: "👾"
+  - triggers: [";emojithread ", ";thread "]
+    replace: "🧵"
 # ===== BUSINESS/WORK =====
   - triggers: [";emojibriefcase ", ";briefcase ", ";case ", ";business "]
     replace: "💼"
@@ -142,6 +150,8 @@ matches:
     replace: "💪"
   - triggers: [";emojitrash ", ";trash ", ";garbage ", ";delete ", ";remove "]
     replace: "🚮"
+  - triggers: [";emojionion ", ";onion ", ";cebula "]
+    replace: "🧅"
 # ===== SPORT =====
   - triggers: [";emojirun ", ";run ", ";running "]
     replace: "🏃🏻‍♂️"
