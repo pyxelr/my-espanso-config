@@ -113,6 +113,8 @@ matches:
     replace: "👾"
   - triggers: [";emojithread ", ";thread "]
     replace: "🧵"
+  - triggers: [";emojipackage ", ";package ", ";pack "]
+    replace: "📦"
 # ===== BUSINESS/WORK =====
   - triggers: [";emojibriefcase ", ";briefcase ", ";case ", ";business "]
     replace: "💼"
