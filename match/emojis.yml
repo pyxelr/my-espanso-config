@@ -8,10 +8,20 @@ matches:
     replace: "⚠️"
   - triggers: [";emojiinfo ", ";info "]
     replace: "ℹ️"
-  - triggers: [";emojistar ", ";star ", ";important "]
-    replace: "⭐"
   - triggers: [";emojiplus ", ";plus ", ";add "]
     replace: "➕"
+  - triggers: [";emojistar ", ";star ", ";important ", ";favorite ", ";fav ", ";p3 "]
+    replace: "⭐"
+  - triggers: [";emojiexclamation ", ";exclamation ", ";! ", ";p2 "]
+    replace: "❗️"
+  - triggers: [";emojiexclamation2 ", ";exclamation2 ", ";!! ", ";p1 "]
+    replace: "‼️"
+  - triggers: [";emojiexclamationquestion ", ";exclamationquestion ", ";confused ", ";what ", ";?! "]
+    replace: "⁉️"
+  - triggers: [";emojiquestion ", ";question ", ";? "]
+    replace: "❓"
+  - triggers: [";emojialarm ", ";alarm ", ";alert ", ";emergency "]
+    replace: "🚨"
 # ===== REACTION =====
   - triggers: [";emojithumbsup ", ";thumbsup ", ";like "]
     replace: "👍"
@@ -38,21 +48,23 @@ matches:
   - triggers: [";emojipray2 ", ";pray2 "]
     replace: "🙏"
 # ===== MOOD =====
-  - triggers: [";emojihappy ", ";happy "]
+  - triggers: [";emojihappy ", ";happy ", ";:) "]
     replace: "🙂"
-  - triggers: [";emojisuperhappy ", ";superhappy ", ";shappy "]
+  - triggers: [";emojisuperhappy ", ";superhappy ", ";shappy ", ";:)) "]
     replace: "😊"
-  - triggers: [";emojilaugh ", ";laugh "]
+  - triggers: [";emojilaugh ", ";laugh ", ";:D ", ";xD "]
     replace: "😆"
-  - triggers: [";emojithink ", ";think "]
+  - triggers: [";emojilaugh2 ", ";laugh2 ", ";:DD ", ";xDD ", ";XD "]
+    replace: "🤣"
+  - triggers: [";emojithink ", ";think ", ";hmm ", ";?? "]
     replace: "🤔"
-  - triggers: [";emojitired ", ";tired ", ";sleep ", ";dream "]
+  - triggers: [";emojitired ", ";tired ", ";sleep ", ";dream ", ";zzz "]
     replace: "😴"
-  - triggers: [";emojisad ", ";sad "]
+  - triggers: [";emojisad ", ";sad ", ";:( "]
     replace: "🙁"
-  - triggers: [";emojitear ", ";tear "]
+  - triggers: [";emojitear ", ";tear ", ";;( "]
     replace: "😢"
-  - triggers: [";emojicry ", ";cry "]
+  - triggers: [";emojicry ", ";cry ", ";sob ", ";;'( "]
     replace: "😭"
 # ===== TECH =====
   - triggers: [";emojibug ", ";bug "]
@@ -94,6 +106,8 @@ matches:
     replace: "⏳"
   - triggers: [";emojiperson ", ";person "]
     replace: "👤"
+  - triggers: [";emojipin ", ";pin "]
+    replace: "📌"
 # ===== ACTIVITIES =====
   - triggers: [";emojibook ", ";book ", ";learn ", ";study ", ";read "]
     replace: "📚"
