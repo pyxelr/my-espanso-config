@@ -41,6 +41,10 @@ matches:
     replace: "💥"
   - triggers: [";emojitada ", ";tada ", ";celebrate ", ";party "]
     replace: "🎉"
+  - triggers: [";emojitrophy ", ";trophy ", ";champion ", ";champ "]
+    replace: "🏆"
+  - triggers: [";emojimedal ", ";goldmedal ", ";medal "]
+    replace: "🥇"
   - triggers: [";emojipoop ", ";poop ", ";shit "]
     replace: "💩"
   - triggers: [";emojisparkles ", ";sparkles ", ";magic "]
