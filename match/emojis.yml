@@ -22,6 +22,10 @@ matches:
     replace: "❓"
   - triggers: [";emojialarm ", ";alarm ", ";alert ", ";emergency "]
     replace: "🚨"
+  - triggers: [";emojiredcircle ", ";redcircle ", ";red "]
+    replace: "🔴"
+  - triggers: [";emojigreencircle ", ";greencircle ", ";green "]
+    replace: "🟢"
 # ===== REACTION =====
   - triggers: [";emojithumbsup ", ";thumbsup ", ";like "]
     replace: "👍"
@@ -33,8 +37,12 @@ matches:
     replace: "❤️"
   - triggers: [";emojifire ", ";fire "]
     replace: "🔥"
+  - triggers: [";emojiexplosion ", ";explosion ", ";boom ", ";bang "]
+    replace: "💥"
   - triggers: [";emojitada ", ";tada ", ";celebrate ", ";party "]
     replace: "🎉"
+  - triggers: [";emojipoop ", ";poop ", ";shit "]
+    replace: "💩"
   - triggers: [";emojisparkles ", ";sparkles ", ";magic "]
     replace: "✨"
   - triggers: [";emojirocket ", ";rocket ", ";deploy "]
@@ -49,17 +57,23 @@ matches:
     replace: "🙏"
   - triggers: [";emojiclap ", ";clap ", ";applause ", ";bravo "]
     replace: "👏"
-  - triggers: [";emojipoop ", ";poop ", ";shit "]
-    replace: "💩"
+  - triggers: [";emojihandshake ", ";handshake ", ";shake ", ";deal "]
+    replace: "🤝"
+  - triggers: [";emojibow ", ";bow "]
+    replace: "🙇🏻‍♂️"
 # ===== MOOD =====
   - triggers: [";emojihappy ", ";happy ", ";:) "]
     replace: "🙂"
   - triggers: [";emojisuperhappy ", ";superhappy ", ";shappy ", ";:)) "]
     replace: "😊"
+  - triggers: [";emojiloved ", ";loved "]
+    replace: "🥰"
   - triggers: [";emojilaugh ", ";laugh ", ";:D ", ";xD "]
     replace: "😆"
   - triggers: [";emojilaugh2 ", ";laugh2 ", ";:DD ", ";xDD ", ";XD "]
     replace: "🤣"
+  - triggers: [";emojigiggle ", ";giggle ", ";laugh3 ", ";hehe "]
+    replace: "🤭"
   - triggers: [";emojithink ", ";think ", ";hmm ", ";?? "]
     replace: "🤔"
   - triggers: [";emojiyawn ", ";yawn ", ";tired "]
@@ -72,6 +86,10 @@ matches:
     replace: "😢"
   - triggers: [";emojicry ", ";cry ", ";sob ", ";;'( "]
     replace: "😭"
+  - triggers: [";emojiwow ", ";wow ", ";surprised "]
+    replace: "😮"
+  - triggers: [";emojimindblown ", ";mindblown ", ";blown ", ";wow2 "]
+    replace: "🤯"
   - triggers: [";emojiscream ", ";scream ", ";scared ", ";shock ", ";omg "]
     replace: "😱"
   - triggers: [";emojisweat ", ";sweat "]
@@ -86,59 +104,87 @@ matches:
     replace: "😉"
   - triggers: [";emojigoofy ", ";goofy ", ";crazy "]
     replace: "🤪"
+  - triggers: [";emojithoughtballoon ", ";thoughtballoon ", ";thought "]
+    replace: "💭"
 # ===== TECH =====
+  - triggers: [";emojitech ", ";tech "]
+    replace: "💻"
+  - triggers: [";emojicode ", ";code "]
+    replace: "🧑🏻‍💻"
   - triggers: [";emojibug ", ";bug "]
     replace: "🐛"
   - triggers: [";emojidata ", ";data "]
     replace: "📊"
   - triggers: [";emojiweb ", ";post "]
     replace: "🌐"
-  - triggers: [";emojitech ", ";tech "]
-    replace: "💻"
-  - triggers: [";emojicode ", ";code "]
-    replace: "🧑🏻‍💻"
   - triggers: [";emojiwrench ", ";wrench ", ";service ", ";fix "]
     replace: "🔧"
   - triggers: [";emojirecycle ", ";recycle ", ";refactor ", ";refine "]
     replace: "♻️"
   - triggers: [";emojisetup ", ";setup ", ";cog "]
     replace: "⚙️"
-  - triggers: [";emojilock ", ";lock ", ";secure ", ";encrypted "]
-    replace: "🔐"
   - triggers: [";emojiunlock ", ";unlock ", ";insecure ", ";decrypted "]
     replace: "🔓"
+  - triggers: [";emojilock ", ";lock ", ";secure ", ";encrypted "]
+    replace: "🔐"
   - triggers: [";emojikey ", ";key ", ";password "]
     replace: "🔑"
   - triggers: [";emojihacker ", ";hacker ", ";hack "]
     replace: "👾"
-  - triggers: [";emojithread ", ";thread "]
-    replace: "🧵"
+  - triggers: [";emojishield ", ";shield ", ";protect "]
+    replace: "🛡️"
+  - triggers: [";emojicloud ", ";cloud "]
+    replace: "☁️"
+  - triggers: [";emojidatabase ", ";database ", ";db "]
+    replace: "🗃️"
   - triggers: [";emojipackage ", ";package ", ";pack "]
     replace: "📦"
+  - triggers: [";emojilink ", ";link "]
+    replace: "🔗"
+  - triggers: [";emojisearch ", ";search ", ";mag ", ";find "]
+    replace: "🔍"
+  - triggers: [";emojisearch2 ", ";search2 ", ";mag2 ", ";find2 "]
+    replace: "🔎"
+  - triggers: [";emojithread ", ";thread "]
+    replace: "🧵"
+  - triggers: [";emojifast ", ";fast ", ";speed "]
+    replace: "⚡"
 # ===== BUSINESS/WORK =====
   - triggers: [";emojibriefcase ", ";briefcase ", ";case ", ";business "]
     replace: "💼"
   - triggers: [";emojinecktie ", ";necktie ", ";suit ", ";job "]
     replace: "👔"
-  - triggers: [";emojiinvestment ", ";investment ", ";invest "]
+  - triggers: [";emojiinvestment ", ";investment ", ";invest ", ";trendup ", ";tup "]
     replace: "📈"
+  - triggers: [";emojitrenddown ", ";trenddown ", ";tdown "]
+    replace: "📉"
   - triggers: [";emojibulb ", ";bulb ", ";idea "]
     replace: "💡"
+  - triggers: [";emojipin ", ";pin "]
+    replace: "📌"
+  - triggers: [";emojimoney ", ";money "]
+    replace: "💰"
+  - triggers: [";emojimoneyfly ", ";moneyfly "]
+    replace: "💸"
   - triggers: [";emojitime ", ";time ", ";clock "]
     replace: "⌚"
   - triggers: [";emojiwait ", ";wait ", ";hourglass ", ";hglass "]
     replace: "⏳"
   - triggers: [";emojiperson ", ";person "]
     replace: "👤"
-  - triggers: [";emojipin ", ";pin "]
-    replace: "📌"
+  - triggers: [";emojiteacher ", ";teacher ", ";teach ", ";presenter ", ";present "]
+    replace: "👨🏻‍🏫"
 # ===== ACTIVITIES =====
-  - triggers: [";emojibook ", ";book ", ";learn ", ";study ", ";read "]
+  - triggers: [";emojibook ", ";book ", ";books ", ";learn ", ";study ", ";read "]
     replace: "📚"
   - triggers: [";emojievent ", ";event ", ";calendar "]
     replace: "🗓"
   - triggers: [";emojitravel ", ";travel ", ";map "]
     replace: "🗺"
+  - triggers: [";emojicar ", ";car "]
+    replace: "🚙"
+  - triggers: [";emojiplane ", ";plane "]
+    replace: "✈️"
   - triggers: [";emojishopping ", ";shopping ", ";shop "]
     replace: "🛍"
   - triggers: [";emojitalk ", ";talk ", ";mic "]
@@ -166,6 +212,8 @@ matches:
     replace: "💪"
   - triggers: [";emojitrash ", ";trash ", ";garbage ", ";delete ", ";remove "]
     replace: "🚮"
+  - triggers: [";emojitrash2 ", ";trash2 ", ";garbage2 ", ";delete2 ", ";remove2 "]
+    replace: "🗑️"
   - triggers: [";emojionion ", ";onion ", ";cebula "]
     replace: "🧅"
 # ===== SPORT =====
@@ -181,7 +229,7 @@ matches:
     replace: "⚽"
   - triggers: [";emojivolleyball ", ";volleyball "]
     replace: "🏐"
-  - triggers: [";emojiinlineskate ", ";inlineskate ", ";skating "]
+  - triggers: [";emojiinlineskate ", ";inlineskate ", ";skating ", ";rollers "]
     replace: "🛼"
   - triggers: [";emojigym ", ";gym "]
     replace: "🏋🏻‍♂️"
