@@ -197,6 +197,8 @@ matches:
     replace: "🎹"
   - triggers: [";emojigame ", ";game "]
     replace: "🎮"
+  - triggers: [";emojimovie ", ";movie ", ";movies ", ";popcorn "]
+    replace: "🍿"
   - triggers: [";emojiart ", ";art ", ";draw "]
     replace: "🎨"
   - triggers: [";emojinote ", ";note ", ";write "]
@@ -221,6 +223,8 @@ matches:
   - triggers: [";emojionion ", ";onion ", ";cebula "]
     replace: "🧅"
 # ===== SPORT =====
+  - triggers: [";emojiwalk ", ";walk ", ";walking "]
+    replace: "🚶🏻"
   - triggers: [";emojirun ", ";run ", ";running "]
     replace: "🏃🏻‍♂️"
   - triggers: [";emojibike ", ";bike ", ";biking ", ";cycle ", ";cycling "]
@@ -241,3 +245,5 @@ matches:
     replace: "🥊"
   - triggers: [";emojihike ", ";hike ", ";hiking ", ";climb ", ";climbing "]
     replace: "🧗‍♂️"
+  - triggers: [";emojicartwheel ", ";cartwheel ", ";cartwheeling "]
+    replace: "🤸🏻‍♂️"
