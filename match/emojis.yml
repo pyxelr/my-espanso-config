@@ -229,6 +229,8 @@ matches:
     replace: "🏃🏻‍♂️"
   - triggers: [";emojibike ", ";bike ", ";biking ", ";cycle ", ";cycling "]
     replace: "🚴🏻‍♂️"
+  - triggers: [";emojimountainbike ", ";mountainbike ", ";mbike ", ";mbiking ", ";mtb "]
+    replace: "🚵🏻‍♂️"
   - triggers: [";emojiswim ", ";swim ", ";swimming "]
     replace: "🏊🏻‍♂️"
   - triggers: [";emojisauna ", ";sauna "]
