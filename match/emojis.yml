@@ -114,7 +114,7 @@ matches:
   - triggers: [";emojitech ", ";tech "]
     replace: "💻"
   - triggers: [";emojicode ", ";code "]
-    replace: "🧑🏻‍💻"
+    replace: "👨🏻‍💻"
   - triggers: [";emojibug ", ";bug "]
     replace: "🐛"
   - triggers: [";emojidata ", ";data "]
@@ -228,9 +228,9 @@ matches:
   - triggers: [";emojirun ", ";run ", ";running "]
     replace: "🏃🏻‍♂️"
   - triggers: [";emojibike ", ";bike ", ";biking ", ";cycle ", ";cycling "]
-    replace: "🚵🏻‍♂️"
+    replace: "🚴🏻‍♂️"
   - triggers: [";emojiswim ", ";swim ", ";swimming "]
-    replace: "🏊"
+    replace: "🏊🏻‍♂️"
   - triggers: [";emojisauna ", ";sauna "]
     replace: "🧖🏻‍♂️"
   - triggers: [";emojisoccer ", ";soccer ", ";football "]
@@ -244,6 +244,6 @@ matches:
   - triggers: [";emojibox ", ";box ", ";boxing "]
     replace: "🥊"
   - triggers: [";emojihike ", ";hike ", ";hiking ", ";climb ", ";climbing "]
-    replace: "🧗‍♂️"
+    replace: "🧗🏻‍♂️"
   - triggers: [";emojicartwheel ", ";cartwheel ", ";cartwheeling "]
     replace: "🤸🏻‍♂️"
