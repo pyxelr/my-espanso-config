@@ -2,7 +2,7 @@ matches:
 # ===== STATUS =====
   - triggers: [";emojiyes ", ";yes ", ";check ", ";done "]
     replace: "✅"
-  - triggers: [";emojino ", ";no "]
+  - triggers: [";emojino ", ";no ", ";wrong ", ";error "]
     replace: "❌"
   - triggers: [";emojiwarning ", ";warning ", ";warn "]
     replace: "⚠️"
@@ -239,8 +239,14 @@ matches:
     replace: "⚽"
   - triggers: [";emojivolleyball ", ";volleyball "]
     replace: "🏐"
+  - triggers: [";emojitennis ", ";tennis "]
+    replace: "🎾"
   - triggers: [";emojiinlineskate ", ";inlineskate ", ";skating ", ";rollers "]
     replace: "🛼"
+  - triggers: [";emojiiceskate ", ";iceskate ", ";iceskating "]
+    replace: "⛸️"
+  - triggers: [";emojiskiing ", ";ski ", ";skiing "]
+    replace: "⛷️"
   - triggers: [";emojigym ", ";gym "]
     replace: "🏋🏻‍♂️"
   - triggers: [";emojibox ", ";box ", ";boxing "]
@@ -249,3 +255,40 @@ matches:
     replace: "🧗🏻‍♂️"
   - triggers: [";emojicartwheel ", ";cartwheel ", ";cartwheeling "]
     replace: "🤸🏻‍♂️"
+# ===== TEXT FACES =====
+  - triggers: [";textemojilennyface ", ";lennyface ", ";lface "]
+    replace: "( ͡° ͜ʖ ͡°)"
+  - triggers: [";textemojilennyfacewink ", ";lennyfacewink ", ";lfacewink ", ";lfacew "]
+    replace: "( ͡~ ͜ʖ ͡°)"
+  - triggers: [";textemojishrug ", ";tshrug ", ";shrug "]
+    replace: "¯\\_(ツ)_/¯"
+  - triggers: [";textemojitableflip ", ";tableflip1 ", ";tableflip ", ";tflip "]
+    replace: "(╯°□°)╯︵ ┻━┻"
+  - triggers: [";textemojitablefix ", ";tableflip2 ", ";tablefix ", ";tfix "]
+    replace: "┬─┬ ノ( ゜-゜ノ)"
+  - triggers: [";textemodisapproval ", ";tdisapproval ", ";disapproval "]
+    replace: "ಠ_ಠ"
+  - triggers: [";textemojiconfused", ";tconfused"]
+    replace: "(￢_￢)"
+  - triggers: [";textemojikawaii ", ";tkawaii ", ";kawaii "]
+    replace: "(｡◕‿‿◕｡)"
+  - triggers: [";textemojibear ", ";tbear "]
+    replace: "ʕ•ᴥ•ʔ"
+  - triggers: [";textemojicat ", ";tcat "]
+    replace: "(=^ェ^=)"
+  - triggers: [";textemojilove", ";tlove"]
+    replace: "(♥‿♥)"
+  - triggers: [";textemojihappy2 ", ";thappy ", ";thappy1 "]
+    replace: "o(≧∇≦o)"
+  - triggers: [";textemojihappy1 ", ";thappy2 "]
+    replace: "(~‾▿‾)~"
+  - triggers: [";textemojisparkle ", ";tsparkle "]
+    replace: "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  - triggers: [";textemojidancer ", ";tdancer "]
+    replace: "ᕕ( ᐛ )ᕗ"
+  - triggers: [";textemojiangry ", ";tangry ", ";tfight ", ";tpunch "]
+    replace: "(ง'̀-'́)ง"
+  - triggers: [";textemojihug ", ";thug "]
+    replace: "(づ ◕‿◕ )づ"
+  - triggers: [";textemojicry ", ";tcry "]
+    replace: "(╥﹏╥)"
