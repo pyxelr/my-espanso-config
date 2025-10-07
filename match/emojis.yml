@@ -45,6 +45,12 @@ matches:
     replace: "🏆"
   - triggers: [";emojimedal ", ";goldmedal ", ";medal "]
     replace: "🥇"
+  - triggers: [";emojicrown ", ";crown "]
+    replace: "👑"
+  - triggers: [";emojiking ", ";king "]
+    replace: "🤴🏻"
+  - triggers: [";emojiqueen ", ";queen "]
+    replace: "👸🏼"
   - triggers: [";emojipoop ", ";poop ", ";shit "]
     replace: "💩"
   - triggers: [";emojisparkles ", ";sparkles ", ";magic "]
@@ -121,6 +127,8 @@ matches:
     replace: "📊"
   - triggers: [";emojiweb ", ";post "]
     replace: "🌐"
+  - triggers: [";emojiemail ", ";email "]
+    replace: "📧"
   - triggers: [";emojiwrench ", ";wrench ", ";service ", ";fix "]
     replace: "🔧"
   - triggers: [";emojirecycle ", ";recycle ", ";refactor ", ";refine "]
@@ -187,6 +195,8 @@ matches:
     replace: "🗺"
   - triggers: [";emojicar ", ";car "]
     replace: "🚙"
+  - triggers: [";emojicourier ", ";courier "]
+    replace: "🚚"
   - triggers: [";emojiplane ", ";plane "]
     replace: "✈️"
   - triggers: [";emojishopping ", ";shopping ", ";shop "]
