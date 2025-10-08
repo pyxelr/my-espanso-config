@@ -57,12 +57,14 @@ matches:
     replace: "pbpaste | tee \"$|$\""
 
 # ===== BASH =====
+  - triggers: [";sourceenv ", ";senv ", ";env "] # source .env file
+    replace: "set -a && source $|$.env && set +a"
+  - trigger: ";tail " # tail n lines
+    replace: "| tail -10"
   - trigger: ";dec " # base64 decode
     replace: "echo -n \"$|$\" | base64 -d"
   - trigger: ";enc " # base64 encode
     replace: "echo -n \"$|$\" | base64"
-  - trigger: ";tail " # tail n lines
-    replace: "| tail -10"
 # ---
   - trigger: ";mdfi " # mdfind file
     replace: "mdfind -name \"$|$\""
