@@ -1,13 +1,111 @@
 # NOTE 1: replace "..." with your values
 # NOTE 2: consider defining snippets for generating your kubeconfig file
 matches:
+# ===== RESOURCE MANAGEMENT =====
   - triggers: [";k8spods ", ";kpods "]
     replace: "kubectl get pods --all-namespaces"
+  - triggers: [";k8spodsnamespace ", ";kpodsn "]
+    replace: "kubectl get pods --namespace "
+  - triggers: [";k8sdeployments ", ";kdeploy "]
+    replace: "kubectl get deployments --all-namespaces"
+  - triggers: [";k8sdeploymentsnamespace ", ";kdeployn "]
+    replace: "kubectl get deployments --namespace "
   - triggers: [";k8sservices ", ";kservices "]
     replace: "kubectl get services --all-namespaces"
+  - triggers: [";k8sservicesnamespace ", ";kservicesn "]
+    replace: "kubectl get services --namespace "
+  - triggers: [";k8snodes ", ";knodes "]
+    replace: "kubectl get nodes"
+  - triggers: [";k8snamespaces ", ";kns "]
+    replace: "kubectl get namespaces"
+  - triggers: [";k8sevents ", ";kevents "]
+    replace: "kubectl get events --all-namespaces --sort-by='.lastTimestamp'"
+  - triggers: [";k8seventslimit ", ";keventsl "]
+    replace: "kubectl get events --all-namespaces --sort-by='.lastTimestamp' | tail -30"
+  - triggers: [";k8seventsnamespace ", ";keventsn "]
+    replace: "kubectl get events --namespace "
+  - triggers: [";k8sconfigmaps ", ";kcm "]
+    replace: "kubectl get configmaps --all-namespaces"
+  - triggers: [";k8sconfigmapsnamespace ", ";kcmn "]
+    replace: "kubectl get configmaps --namespace "
+  - triggers: [";k8ssecrets ", ";ksecrets "]
+    replace: "kubectl get secrets --all-namespaces"
+  - triggers: [";k8ssecretsnamespace ", ";ksecretsn "]
+    replace: "kubectl get secrets --namespace "
+  - triggers: [";k8singress ", ";kingress "]
+    replace: "kubectl get ingress --all-namespaces"
+  - triggers: [";k8singressnamespace ", ";kingressn "]
+    replace: "kubectl get ingress --namespace "
+  - triggers: [";k8sjobs ", ";kjobs "]
+    replace: "kubectl get jobs --all-namespaces"
+  - triggers: [";k8sjobsnamespace ", ";kjobsn "]
+    replace: "kubectl get jobs --namespace "
+  - triggers: [";k8scronjobs ", ";kcronjobs "]
+    replace: "kubectl get cronjobs --all-namespaces"
+  - triggers: [";k8scronjobsnamespace ", ";kcronjobsn "]
+    replace: "kubectl get cronjobs --namespace "
+  - triggers: [";k8spvc ", ";kpvc "]
+    replace: "kubectl get pvc --all-namespaces"
+  - triggers: [";k8spvcnamespace ", ";kpvcn "]
+    replace: "kubectl get pvc --namespace "
+# ===== DESCRIBE & LOGS =====
+  - triggers: [";k8sdescribe ", ";kdesc "]
+    replace: "kubectl describe "
+  - triggers: [";k8slogs ", ";klogs "]
+    replace: "kubectl logs "
+  - triggers: [";k8slogsfollow ", ";klogsf "]
+    replace: "kubectl logs -f "
+  - triggers: [";k8slogsprevious ", ";klogsp "]
+    replace: "kubectl logs --previous "
+  - triggers: [";k8slogstail ", ";klogst "]
+    replace: "kubectl logs --tail=100 "
+# ===== EXEC & PORT-FORWARD =====
+  - triggers: [";k8sexec ", ";kexec "]
+    replace: "kubectl exec -it "
+  - triggers: [";k8sportforward ", ";kpf "]
+    replace: "kubectl port-forward "
+# ===== APPLY & DELETE =====
+  - triggers: [";k8sapply ", ";kapply "]
+    replace: "kubectl apply -f "
+  - triggers: [";k8sdelete ", ";kdelete "]
+    replace: "kubectl delete -f "
+  - triggers: [";k8sscale ", ";kscale "]
+    replace: "kubectl scale deployment "
+  - triggers: [";k8srestart ", ";krestart "]
+    replace: "kubectl rollout restart deployment "
+  - triggers: [";k8srollout ", ";krollout "]
+    replace: "kubectl rollout status deployment "
+  - triggers: [";k8srollback ", ";krollback "]
+    replace: "kubectl rollout undo deployment "
+  - triggers: [";k8sedit ", ";kedit "]
+    replace: "kubectl edit "
+  - triggers: [";k8spatch ", ";kpatch "]
+    replace: "kubectl patch "
+# ===== DEBUG & TROUBLESHOOT =====
+  - triggers: [";k8sdebug ", ";kdebug "]
+    replace: "kubectl run debug-pod --rm -i --tty --image=busybox -- sh"
+  - triggers: [";k8sgetpodyaml ", ";kpodyaml "]
+    replace: "kubectl get pod -o yaml "
+  - triggers: [";k8sgetall ", ";kall "]
+    replace: "kubectl get all --all-namespaces"
+  - triggers: [";k8sdrain ", ";kdrain "]
+    replace: "kubectl drain --ignore-daemonsets --delete-emptydir-data "
+  - triggers: [";k8scordon ", ";kcordon "]
+    replace: "kubectl cordon "
+  - triggers: [";k8suncordon ", ";kuncordon "]
+    replace: "kubectl uncordon "
+# ===== WATCH & TOP =====
+  - triggers: [";k8swatch ", ";kwatch "]
+    replace: "kubectl get pods --watch"
+  - triggers: [";k8stopnodes ", ";ktop "]
+    replace: "kubectl top nodes"
+  - triggers: [";k8stoppods ", ";ktoppods "]
+    replace: "kubectl top pods --all-namespaces"
 # ===== KUBECONFIG =====
+# GET
   - triggers: [";kubeconfgetcontexts ", ";kconfgetcontexts "] # get contexts from ~/.kube/config
     replace: "kubectl config get-contexts"
+# SET
   - triggers: [";kubeconfsetcontext ", ";kcontext "] # set context
     replace: "kubectl config use-context $(kubectl config get-contexts -o name | fzf --height=10 --prompt=\"Kubernetes Context> \")"
   - triggers: [";kubeconfsetdevcontext ", ";d "] # set dev context

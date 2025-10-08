@@ -61,6 +61,8 @@ matches:
     replace: "echo -n \"$|$\" | base64 -d"
   - trigger: ";enc " # base64 encode
     replace: "echo -n \"$|$\" | base64"
+  - trigger: ";tail " # tail n lines
+    replace: "| tail -10"
 # ---
   - trigger: ";mdfi " # mdfind file
     replace: "mdfind -name \"$|$\""
