@@ -1,6 +1,13 @@
 matches:
   - triggers: [";pythonformat ", ";pyform "]
     replace: "black --line-length=140 . && isort --profile black . && flake8 --max-line-length=140 . && mypy --strict --ignore-missing-imports ."
+# ===== VIRTUAL ENVIRONMENT =====
+  - triggers: [";venvcreate ", ";venvc "]
+    replace: "python -m venv venv"
+  - triggers: [";venvactivate ", ";venva "]
+    replace: "source venv/bin/activate"
+  - triggers: [";venvdeactivate ", ";venvd "]
+    replace: "deactivate"
 # ===== PRE-COMMIT =====
   - triggers: [";pre-commitinstall", ";precinst "]
     replace: "pre-commit install"
