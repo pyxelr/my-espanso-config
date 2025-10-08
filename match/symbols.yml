@@ -1,28 +1,23 @@
 matches:
+# ===== TYPOGRAPHY =====
   - triggers: [";endash ", ";en ", ";- "]
     replace: "–"
   - triggers: [";emdash ", ";em ", ";-- "]
     replace: "—"
   - triggers: [";ellipsis ", ";... "]
     replace: "…"
-  - triggers: [";lessorequal ", ";<= "]
-    replace: "≤"
-  - triggers: [";moreorequal ", ";>= "]
-    replace: "≥"
-  - triggers: [";notequal ", ";<> "]
-    replace: "≠"
-  - trigger: ";approx "
-    replace: "≈"
   - trigger: ";quotepl "
     replace: "„”"
   - trigger: ";quoteen "
     replace: "“”"
+# ===== BULLETS =====
   - triggers: [";bullet ", ";bul "]
     replace: "•"
   - triggers: [";bbullet ", ";bbul "]
     replace: "●"
   - triggers: [";rbullet ", ";rbul "]
     replace: "➤"
+# ===== ARROWS =====
   - triggers: [";left ", ";<< "]
     replace: "←"
   - triggers: [";right ", ";>> "]
@@ -31,9 +26,94 @@ matches:
     replace: "↑"
   - triggers: [";down ", ";vv "]
     replace: "↓"
+# ===== MISC SYMBOLS =====
   - trigger: ";tick "
     replace: "✓"
+  - trigger: ";section "
+    replace: "§"
+# ===== LEGAL =====
+  - triggers: [";trademark "]
+    replace: "™"
+  - trigger: ";registered "
+    replace: "®"
+  - trigger: ";copyright "
+    replace: "©"
+# ===== CURRENCIES =====
   - trigger: ";gbp "
     replace: "£"
   - trigger: ";eur "
     replace: "€"
+  - trigger: ";yen "
+    replace: "¥"
+  - trigger: ";cent "
+    replace: "¢"
+# ===== MATH =====
+  - triggers: [";lessorequal ", ";<= "]
+    replace: "≤"
+  - triggers: [";moreorequal ", ";>= "]
+    replace: "≥"
+  - triggers: [";notequal ", ";<> "]
+    replace: "≠"
+  - trigger: ";approx "
+    replace: "≈"
+  - trigger: ";sqrt "
+    replace: "√"
+  - triggers: [";infinity ", ";inf "]
+    replace: "∞"
+  - trigger: ";plusminus "
+    replace: "±"
+  - triggers: [";multiply ", ";mult "]
+    replace: "×"
+  - triggers: [";dot ", ";middot "]
+    replace: "·"
+  - trigger: ";divide "
+    replace: "÷"
+  - triggers: [";degree ", ";deg "]
+    replace: "°"
+  - trigger: ";pi "
+    replace: "π"
+  - trigger: ";sum "
+    replace: "∑"
+  - trigger: ";integral "
+    replace: "∫"
+  - trigger: ";angle "
+    replace: "∠"
+  - trigger: ";perp "
+    replace: "⊥"
+  - trigger: ";therefore "
+    replace: "∴"
+  - trigger: ";union "
+    replace: "∪"
+  - trigger: ";intersect "
+    replace: "∩"
+  - triggers: [";in ", ";elementof "]
+    replace: "∈"
+  - trigger: ";notin "
+    replace: "∉"
+  - trigger: ";subset "
+    replace: "⊂"
+  - trigger: ";emptyset "
+    replace: "∅"
+# ===== GREEK =====
+  - trigger: ";alpha "
+    replace: "α"
+  - trigger: ";beta "
+    replace: "β"
+  - trigger: ";delta "
+    replace: "Δ"
+  - trigger: ";gamma "
+    replace: "γ"
+  - trigger: ";lambda "
+    replace: "λ"
+  - trigger: ";mu "
+    replace: "μ"
+  - trigger: ";omega "
+    replace: "ω"
+  - trigger: ";Omega "
+    replace: "Ω"
+  - trigger: ";phi "
+    replace: "φ"
+  - trigger: ";sigma "
+    replace: "σ"
+  - trigger: ";theta "
+    replace: "θ"
