@@ -112,6 +112,10 @@ matches:
     replace: "😮‍💨"
   - triggers: [";emojiwink ", ";wink ", ";;) "]
     replace: "😉"
+  - triggers: [";emojiweird ", ";weird ", ";raisedeyebrow ", ";suspicious ", ";sus "]
+    replace: "🤨"
+  - triggers: [";emojigrimace ", ";grimace ", ";grimacing ", ";awkward "]
+    replace: "😬"
   - triggers: [";emojigoofy ", ";goofy ", ";crazy "]
     replace: "🤪"
   - triggers: [";emojithoughtballoon ", ";thoughtballoon ", ";thought "]
