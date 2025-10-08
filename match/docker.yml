@@ -1,10 +1,31 @@
 matches:
+# ===== BASIC COMMANDS =====
+  - triggers: [";dockerps ", ";dps "]
+    replace: "docker ps"
+  - triggers: [";dockerpsa ", ";dpsa "]
+    replace: "docker ps -a"
+  - triggers: [";dockerimages ", ";dimages ", ";dimg "]
+    replace: "docker images"
+  - triggers: [";dockerlogs ", ";dlogs "]
+    replace: "docker logs "
+  - triggers: [";dockerlogsfollow ", ";dlogsf "]
+    replace: "docker logs -f "
+  - triggers: [";dockerinspect ", ";dinspect "]
+    replace: "docker inspect "
+# ===== CLEANUP =====
+  - triggers: [";dockerrm ", ";drm "]
+    replace: "docker rm "
+  - triggers: [";dockerrmi ", ";drmi "]
+    replace: "docker rmi "
   - triggers: [";dockerstop ", ";dstop "]
     replace: "docker ps -a -q | xargs -r docker stop"
   - triggers: [";dockerprune ", ";dprune "]
     replace: "docker system prune -a --volumes"
+# ===== BUILD & RUN =====
   - triggers: [";dockerpull ", ";dpull "]
     replace: "docker pull python:latest"
+  - triggers: [";dockerbuild ", ";dbuild "]
+    replace: "docker build -t "
   - triggers: [";dockerbuildx ", ";dbuildx "]
     replace: "docker buildx build --platform linux/amd64 --tag $|$:1.0 ."
   - triggers: [";dockerbuildxfile ", ";dbuildxfile "]
@@ -13,5 +34,11 @@ matches:
     replace: "docker run --platform linux/amd64 -it $|$ bash"
   - triggers: [";dockermount ", ";dmount "]
     replace: "docker run --name $|$ -v $(pwd):/app --platform linux/amd64 -it python:latest bash"
+# ===== EXEC =====
   - triggers: [";dockerexec ", ";dexec "]
     replace: "IMG=$|$ && docker start $IMG && docker exec -it $IMG bash"
+# ===== NETWORK & VOLUME =====
+  - triggers: [";dockernetworks ", ";dnetworks "]
+    replace: "docker network ls"
+  - triggers: [";dockervolumes ", ";dvolumes "]
+    replace: "docker volume ls"
