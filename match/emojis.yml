@@ -133,6 +133,10 @@ matches:
     replace: "🌐"
   - triggers: [";emojiemail ", ";email "]
     replace: "📧"
+  - triggers: [";emojiphone ", ";phone "]
+    replace: "📞"
+  - triggers: [";emojismartphone ", ";smartphone ", ";sphone ", ";iphone "]
+    replace: "📱"
   - triggers: [";emojiwrench ", ";wrench ", ";service ", ";fix "]
     replace: "🔧"
   - triggers: [";emojirecycle ", ";recycle ", ";refactor ", ";refine "]
@@ -221,6 +225,10 @@ matches:
     replace: "💬"
   - triggers: [";emojiquiet ", ";quiet ", ";silence ", ";shh "]
     replace: "🤫"
+  - triggers: [";emojicallme ", ";callme "]
+    replace: "🤙🏻"
+  - triggers: [";emojiselfie ", ";selfie "]
+    replace: "🤳🏻"
 # ===== PERSONAL =====
   - triggers: [";emojihello ", ";emojibye ", ";wave ", ";bye "]
     replace: "👋"
