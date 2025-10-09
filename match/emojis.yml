@@ -16,7 +16,7 @@ matches:
     replace: "❗️"
   - triggers: [";emojiexclamation2 ", ";exclamation2 ", ";!! ", ";p1 "]
     replace: "‼️"
-  - triggers: [";emojiexclamationquestion ", ";exclamationquestion ", ";confused ", ";what ", ";?! "]
+  - triggers: [";emojiexclamationquestion ", ";exclamationquestion ", ";what ", ";?! "]
     replace: "⁉️"
   - triggers: [";emojiquestion ", ";question ", ";? "]
     replace: "❓"
@@ -102,6 +102,8 @@ matches:
     replace: "🤯"
   - triggers: [";emojiscream ", ";scream ", ";scared ", ";shock ", ";omg "]
     replace: "😱"
+  - triggers: [";emojidizzy ", ";dizzy "]
+    replace: "😵‍💫"
   - triggers: [";emojisweat ", ";sweat "]
     replace: "😅"
   - triggers: [";emojisweat2 ", ";sweat2 "]
@@ -112,6 +114,8 @@ matches:
     replace: "😮‍💨"
   - triggers: [";emojiwink ", ";wink ", ";;) "]
     replace: "😉"
+  - triggers: [";emojiconfused ", ";confused "]
+    replace: "😕"
   - triggers: [";emojiweird ", ";weird ", ";raisedeyebrow ", ";suspicious ", ";sus "]
     replace: "🤨"
   - triggers: [";emojigrimace ", ";grimace ", ";grimacing ", ";awkward "]
