@@ -1,4 +1,9 @@
 matches:
+  - triggers: [";gitcommit ", ";commit "] # conventional commit message template
+    replace: |-
+      type(scope): description
+      
+      build|chore|ci|docs|feat|fix|perf|refactor|style|test
   - triggers: [";gitpullall ", ";gpullall "] # pull all repositories in ~/REPOS/
     replace: |-
               cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
