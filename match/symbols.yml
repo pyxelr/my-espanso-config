@@ -58,7 +58,7 @@ matches:
     replace: "≈"
   - trigger: ";sqrt "
     replace: "√"
-  - triggers: [";infinity ", ";inf "]
+  - triggers: [";infinity ", ";inf ", ";forever "]
     replace: "∞"
   - trigger: ";plusminus "
     replace: "±"
@@ -94,6 +94,61 @@ matches:
     replace: "⊂"
   - trigger: ";emptyset "
     replace: "∅"
+# ===== NUMERIC MODIFIERS =====
+  - triggers: [";power0 ", ";pow0 "]
+    replace: "⁰"
+  - triggers: [";power1 ", ";pow1 "]
+    replace: "¹"
+  - triggers: [";power2 ", ";pow2 ", ";squared "]
+    replace: "²"
+  - triggers: [";power3 ", ";pow3 ", ";cubed "]
+    replace: "³"
+  - triggers: [";power4 ", ";pow4 "]
+    replace: "⁴"
+  - triggers: [";power5 ", ";pow5 "]
+    replace: "⁵"
+  - triggers: [";power6 ", ";pow6 "]
+    replace: "⁶"
+  - triggers: [";power7 ", ";pow7 "]
+    replace: "⁷"
+  - triggers: [";power8 ", ";pow8 "]
+    replace: "⁸"
+  - triggers: [";power9 ", ";pow9 "]
+    replace: "⁹"
+  - triggers: [";powern ", ";pown "]
+    replace: "ⁿ"
+  - triggers: [";subscript0 ", ";sub0 "]
+    replace: "₀"
+  - triggers: [";subscript1 ", ";sub1 "]
+    replace: "₁"
+  - triggers: [";subscript2 ", ";sub2 "]
+    replace: "₂"
+  - triggers: [";subscript3 ", ";sub3 "]
+    replace: "₃"
+  - triggers: [";subscript4 ", ";sub4 "]
+    replace: "₄"
+  - triggers: [";subscript5 ", ";sub5 "]
+    replace: "₅"
+  - triggers: [";subscript6 ", ";sub6 "]
+    replace: "₆"
+  - triggers: [";subscript7 ", ";sub7 "]
+    replace: "₇"
+  - triggers: [";subscript8 ", ";sub8 "]
+    replace: "₈"
+  - triggers: [";subscript9 ", ";sub9 "]
+    replace: "₉"
+  - triggers: [";subscriptn ", ";subn "]
+    replace: "ₙ"
+  - triggers: [";half ", ";1/2 "]
+    replace: "½"
+  - triggers: [";third ", ";1/3 "]
+    replace: "⅓"
+  - triggers: [";twothirds ", ";2/3 "]
+    replace: "⅔"
+  - triggers: [";quarter ", ";1/4 "]
+    replace: "¼"
+  - triggers: [";threequarters ", ";3/4 "]
+    replace: "¾"
 # ===== GREEK =====
   - trigger: ";alpha "
     replace: "α"
