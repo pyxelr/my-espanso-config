@@ -78,9 +78,11 @@ matches:
     replace: "😊"
   - triggers: [";emojiloved ", ";loved "]
     replace: "🥰"
-  - triggers: [";emojilaugh ", ";laugh ", ";:D ", ";xD "]
+  - triggers: [";emojigrin ", ";grin ", ";:D "]
+    replace: "😁"
+  - triggers: [";emojilaugh ", ";laugh ", ";:DD ", ";xD "]
     replace: "😆"
-  - triggers: [";emojilaugh2 ", ";laugh2 ", ";:DD ", ";xDD ", ";XD "]
+  - triggers: [";emojilaugh2 ", ";laugh2 ", ";:DDD ", ";xDD ", ";XD "]
     replace: "🤣"
   - triggers: [";emojigiggle ", ";giggle ", ";laugh3 ", ";hehe "]
     replace: "🤭"
