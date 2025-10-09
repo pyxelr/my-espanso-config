@@ -8,3 +8,10 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
+
+# ===== GIT =====
+  - trigger: ";commit " # conventional commit message template
+    replace: |-
+      type(scope): description
+      
+      build|chore|ci|docs|feat|fix|perf|refactor|style|test
