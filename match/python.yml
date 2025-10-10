@@ -1,14 +1,14 @@
 matches:
+# ===== PYTHON ONE-LINERS =====
+  - triggers: [";pythoninteractive ", ";pyint "]
+    replace: "python -i"
+  - triggers: [";pythonimport ", ";pyimp "]
+    replace: "python -c \"import $|$ as pkg; print(pkg.__version__)\""
+
+# ===== FORMATTING =====
   - triggers: [";pythonformat ", ";pyform "]
     replace: "black --line-length=140 . && isort --profile black . && flake8 --max-line-length=140 . && mypy --strict --ignore-missing-imports ."
-# ===== VIRTUAL ENVIRONMENT =====
-  - triggers: [";venvcreate ", ";venvc "]
-    replace: "python -m venv venv"
-  - triggers: [";venvactivate ", ";venva "]
-    replace: "source venv/bin/activate"
-  - triggers: [";venvdeactivate ", ";venvd "]
-    replace: "deactivate"
-# ===== PRE-COMMIT =====
+# PRE-COMMIT
   - triggers: [";pre-commitinstall", ";precinst "]
     replace: "pre-commit install"
   - triggers: [";pre-commitrun", ";precrun "]
@@ -21,7 +21,34 @@ matches:
               wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 && chmod +x /bin/hadolint;
               pip install pre-commit;
               pre-commit install
-# ===== PYENV =====
+
+# ===== PIP =====
+# https://github.com/pypa/pip
+  - triggers: [";piplist ", ";pipl "]
+    replace: "python -m pip list && echo && python -m pip check"
+  - triggers: [";pipoutdated ", ";pipout "]
+    replace: "python -m pip list --outdated"
+  - triggers: [";pipinstallrequirements ", ";pipir "]
+    replace: "pip install -r requirements.txt"
+  - triggers: [";pipfreeze ", ";pipf "]
+    replace: "pip freeze > requirements.txt"
+  - triggers: [";pipupgrade", ";pipup "]
+    replace: "python -m pip install -U "
+  - triggers: [";pipupgradepip ", ";pipupp "]
+    replace: "python -m pip install -U pip"
+# https://github.com/pypa/pipx
+  - triggers: [";pipxupgrade ", ";pipxup "]
+    replace: "pipx upgrade-all"
+
+# ===== VIRTUAL ENVIRONMENTS =====
+# VENV
+  - triggers: [";venvcreate ", ";venvc "]
+    replace: "python -m venv venv"
+  - triggers: [";venvactivate ", ";venva "]
+    replace: "source venv/bin/activate"
+  - triggers: [";venvdeactivate ", ";venvd "]
+    replace: "deactivate"
+# PYENV
   - triggers: [";pyenvversions", ";pyver "]
     replace: "pyenv versions"
   - triggers: [";pyenvglobal", ";pyglob "]
@@ -30,3 +57,80 @@ matches:
     replace: "pyenv local "
   - triggers: [";pyenvinstall", ";pyinstall "]
     replace: "pyenv install "
+
+# ===== PACKAGE MANAGERS =====
+# POETRY 
+  - triggers: [";poetryrun ", ";pr "]
+    replace: "poetry run python "
+  - triggers: [";poetryinstall ", ";pi "]
+    replace: "poetry install"
+  - triggers: [";poetryupdate ", ";pu "]
+    replace: "poetry update"
+  - triggers: [";poetryupdateinstall ", ";pui "]
+    replace: "poetry update && poetry install"
+  - triggers: [";poetryadd ", ";pa "]
+    replace: "poetry add "
+  - triggers: [";poetryadddev ", ";pad "]
+    replace: "poetry add --group dev "
+  - triggers: [";poetryremove ", ";prem "]
+    replace: "poetry remove "
+  - triggers: [";poetryshell ", ";ps "]
+    replace: "poetry shell"
+  - triggers: [";poetryshow ", ";psh "]
+    replace: "poetry show"
+  - triggers: [";poetrybuild ", ";pbuild "]
+    replace: "poetry build"
+  - triggers: [";poetrypublish ", ";ppublish "]
+    replace: "poetry publish"
+  - triggers: [";poetryenv ", ";pe "]
+    replace: "poetry env info"
+  - triggers: [";poetrynew ", ";pnew "]
+    replace: "poetry new "
+# UV
+  - triggers: [";uvpython ", ";ur "]
+    replace: "uv run python "
+  - triggers: [";uvsync ", ";us "]
+    replace: "uv sync"
+  - triggers: [";uvlock ", ";ul "]
+    replace: "uv lock"
+  - triggers: [";uvadd ", ";ua "]
+    replace: "uv add "
+  - triggers: [";uvadddev ", ";uad "]
+    replace: "uv add --dev "
+  - triggers: [";uvremove ", ";urem "]
+    replace: "uv remove "
+  - triggers: [";uvrun ", ";urun "]
+    replace: "uv run "
+  - triggers: [";uvpiplist ", ";ulist "]
+    replace: "uv pip list"
+  - triggers: [";uvtree ", ";uvt "]
+    replace: "uv tree"
+  - triggers: [";uvinit ", ";uinit "]
+    replace: "uv init"
+# CONDA
+  - triggers: [";condaactivate ", ";ca "]
+    replace: "conda activate "
+  - triggers: [";condadeactivate ", ";cdea "]
+    replace: "conda deactivate"
+  - triggers: [";condacreate ", ";cc "]
+    replace: "conda create --name $|$ python=3.14 pip pycurl"
+  - triggers: [";condaremove ", ";crem "]
+    replace: "conda remove --name $|$ --all"
+  - triggers: [";condaenvcreate ", ";cec "]
+    replace: "conda env create -f environment.yaml"
+  - triggers: [";condaexport ", ";cexp "]
+    replace: "conda env export --no-builds > environment.yml"
+  - triggers: [";condalist ", ";cl "]
+    replace: "conda list"
+  - triggers: [";condaenvlist ", ";cel "]
+    replace: "conda env list"
+  - triggers: [";condaupdate ", ";cu "]
+    replace: "conda update conda && conda update --all"
+  - triggers: [";condaupdatepython ", ";cup "]
+    replace: "conda update python"
+  - triggers: [";condainstallpython ", ";cip "]
+    replace: "conda install python=3.14"
+  - triggers: [";condasearchpython ", ";csp "]
+    replace: "conda search python"
+  - triggers: [";condaremovemultiple ", ";crm "] # remove multiple conda envs (1, 2, ...)
+    replace: "dir=\"$HOME/miniconda3/envs\" && for subdir in 1 2$|$; do rm -f -r \"$dir/$subdir\"; done"

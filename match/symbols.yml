@@ -70,7 +70,7 @@ matches:
     replace: "÷"
   - triggers: [";degree ", ";deg "]
     replace: "°"
-  - trigger: ";pi "
+  - trigger: ";pii "
     replace: "π"
   - trigger: ";sum "
     replace: "∑"
