@@ -248,6 +248,12 @@ matches:
     replace: "🚮"
   - triggers: [";emojitrash2 ", ";trash2 ", ";garbage2 ", ";delete2 ", ";remove2 "]
     replace: "🗑️"
+  - triggers: [";emojibroom ", ";broom ", ";clean "]
+    replace: "🧹"
+  - triggers: [";emojisoap ", ";soap "]
+    replace: "🧼"
+  - triggers: [";emojisponge ", ";sponge "]
+    replace: "🧽"
   - triggers: [";emojionion ", ";onion ", ";cebula "]
     replace: "🧅"
 # ===== SPORT =====
