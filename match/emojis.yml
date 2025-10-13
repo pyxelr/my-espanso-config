@@ -10,6 +10,8 @@ matches:
     replace: "ℹ️"
   - triggers: [";emojiplus ", ";plus ", ";add ", ";+ "]
     replace: "➕"
+  - triggers: [";emojinew ", ";new "]
+    replace: "🆕"
   - triggers: [";emojistar ", ";star ", ";important ", ";favorite ", ";fav ", ";p3 "]
     replace: "⭐"
   - triggers: [";emojiexclamation ", ";exclamation ", ";! ", ";p2 "]
@@ -27,9 +29,9 @@ matches:
   - triggers: [";emojigreencircle ", ";greencircle ", ";green "]
     replace: "🟢"
 # ===== REACTION =====
-  - triggers: [";emojithumbsup ", ";thumbsup ", ";like "]
+  - triggers: [";emojithumbsup ", ";thumbsup ", ";tup ", ";tu ", ";like "]
     replace: "👍"
-  - triggers: [";emojithumbsdown ", ";thumbsdown ", ";dislike "]
+  - triggers: [";emojithumbsdown ", ";thumbsdown ", ";tdown ", ";td ", ";dislike "]
     replace: "👎"
   - triggers: [";emojiok ", ";ok "]
     replace: "👌"
@@ -180,9 +182,9 @@ matches:
     replace: "💼"
   - triggers: [";emojinecktie ", ";necktie ", ";suit ", ";job "]
     replace: "👔"
-  - triggers: [";emojiinvestment ", ";investment ", ";invest ", ";trendup ", ";tup "]
+  - triggers: [";emojiinvestment ", ";investment ", ";invest ", ";trendup ", ";trup ", ";tru "]
     replace: "📈"
-  - triggers: [";emojitrenddown ", ";trenddown ", ";tdown "]
+  - triggers: [";emojitrenddown ", ";trenddown ", ";trdown ", ";trd "]
     replace: "📉"
   - triggers: [";emojibulb ", ";bulb ", ";idea "]
     replace: "💡"
