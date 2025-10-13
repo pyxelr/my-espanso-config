@@ -63,6 +63,8 @@ matches:
     replace: "🫡"
   - triggers: [";emojifacepalm ", ";facepalm "]
     replace: "🤦🏻‍♂️"
+  - triggers: [";emojishrug ", ";shrug "]
+    replace: "🤷🏻‍♂️"
   - triggers: [";emojipray ", ";pray "]
     replace: "🛐"
   - triggers: [";emojipray2 ", ";pray2 "]
@@ -73,6 +75,12 @@ matches:
     replace: "🤝"
   - triggers: [";emojibow ", ";bow "]
     replace: "🙇🏻‍♂️"
+  - triggers: [";emojiskull ", ";skull ", ";rip3 "]
+    replace: "💀"
+  - triggers: [";emojiskullcrossbones ", ";skullcrossbones ", ";crossbones ", ";skull2 ", ";rip2 "]
+    replace: "☠️"
+  - triggers: [";emojitombstone ", ";tombstone ", ";rip "]
+    replace: "🪦"
 # ===== MOOD =====
   - triggers: [";emojihappy ", ";happy ", ";:) "]
     replace: "🙂"
@@ -296,7 +304,7 @@ matches:
     replace: "( ͡° ͜ʖ ͡°)"
   - triggers: [";textemojilennyfacewink ", ";lennyfacewink ", ";lfacewink ", ";lfacew "]
     replace: "( ͡~ ͜ʖ ͡°)"
-  - triggers: [";textemojishrug ", ";tshrug ", ";shrug "]
+  - triggers: [";textemojishrug ", ";tshrug ", ";shrug2 "]
     replace: "¯\\_(ツ)_/¯"
   - triggers: [";textemojitableflip ", ";tableflip1 ", ";tableflip ", ";tflip "]
     replace: "(╯°□°)╯︵ ┻━┻"
