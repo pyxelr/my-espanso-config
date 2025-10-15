@@ -12,6 +12,8 @@ matches:
     replace: "➕"
   - triggers: [";emojinew ", ";new "]
     replace: "🆕"
+  - triggers: [";emojirefresh ", ";refresh "]
+    replace: "🔄"
   - triggers: [";emojistar ", ";star ", ";important ", ";favorite ", ";fav ", ";p3 "]
     replace: "⭐"
   - triggers: [";emojiexclamation ", ";exclamation ", ";! ", ";p2 "]
