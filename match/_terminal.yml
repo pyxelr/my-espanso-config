@@ -1,13 +1,13 @@
 matches:
 # ===== CONFIG =====
 # ESPANSO
-  - triggers: [";espanso ", ";esp "] # edit espanso config
+  - triggers: [";espanso ", ";esp ", ";e "] # edit espanso config
     replace: "code ~/Library/Application\\ Support/espanso/"
-  - triggers: [";espansozip ", ";espzip "] # zip espanso config to Obsidian vault (rm first, as zip cannot track removed files)
+  - triggers: [";espansozip ", ";espzip ", ";ez "] # zip espanso config to Obsidian vault (rm first, as zip cannot track removed files)
     replace: "rm -f ~/Documents/obsidian-vault/files/espanso-mac.zip && (cd ~/Library/Application\\ Support/espanso && zip -r ~/Documents/obsidian-vault/files/espanso-mac.zip .)"
   - triggers: [";espansozipfile ", ";espzipf "] # zip espanso config to ~/Downloads/
     replace: "rm -f ~/Downloads/espanso-mac.zip && (cd ~/Library/Application\\ Support/espanso && zip -r ~/Downloads/espanso-mac.zip .)"
-  - triggers: [";espansoupdate ", ";espup "] # unzip espanso config from Obsidian vault
+  - triggers: [";espansoupdate ", ";espup ", ";eu "] # unzip espanso config from Obsidian vault
     replace: "unzip -o ~/Documents/obsidian-vault/files/espanso-mac.zip -d ~/Library/Application\\ Support/espanso/"
 # ALIASES
   - trigger: ";aliases "

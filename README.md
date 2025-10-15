@@ -8,7 +8,7 @@ The configuration I am using in [espanso](https://espanso.org/) (open-source tex
 2. Place the contents of `config/` and `match/` folders within your espanso config directory, which can be found with `espanso path` (typically: `$HOME/Library/Application Support/espanso`).
 3. Start using espanso, e.g. by
    1. pressing `CMD+SHIFT+SPACE` to display espanso search bar (list of all available commands in the current context).
-   2. typing `;esp` and pressing space to expand into `"code ~/Library/Application\\ Support/espanso/"` (for viewing/editing your espanso config in VS Code).
+   2. typing `;e` and pressing space to expand into `"code ~/Library/Application\\ Support/espanso/"` (for viewing/editing your espanso config in VS Code).
 
 See [espanso.org/docs/](https://espanso.org/docs/) for the official documentation.
 
