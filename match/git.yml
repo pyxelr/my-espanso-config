@@ -1,16 +1,40 @@
 matches:
-  - triggers: [";gitcommit ", ";commit "] # conventional commit message template
+# ===== GENERAL =====
+  - triggers: [";gitpullall ", ";gpullall ", ";gpa "] # pull all repositories in ~/REPOS/
+    replace: |-
+              cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
+  - triggers: [";gitpickbranch ", ";gbranch ", ";gb "]
+    replace: "git checkout $(git branch -a | sed 's|remotes/origin/||' | sed 's|^[* ]*||' | sort -u | fzf)"
+  - triggers: [";gitcommitnoverify ", ";gcnoverify ", ";gcnv ", ";cnv "]
+    replace: "git commit -m \"$|$\" --no-verify"
+  - triggers: [";gitcommitempty ", ";gcempty ", ";gce ", ";ce "]
+    replace: "git commit --allow-empty -m 'chore: trigger build'"
+# ===== COMMIT TYPES =====
+  - triggers: [";gitcommit ", ";commit ", ";c "] # conventional commit message template
     replace: |-
       type(scope): description
       
       build|chore|ci|docs|feat|fix|perf|refactor|style|test
-  - triggers: [";gitpullall ", ";gpullall "] # pull all repositories in ~/REPOS/
-    replace: |-
-              cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
-  - triggers: [";gitpickbranch ", ";gbranch "] # pick git branch
-    replace: "git checkout $(git for-each-ref --format='%(refname:short)' refs/heads/ | fzf)"
-  - triggers: [";gitcommitempty ", ";gcempty "]
-    replace: "git commit --allow-empty -m 'chore: trigger build'"
+  - triggers: [";gitbuild ", ";cbuild "]
+    replace: "build($|$): "
+  - triggers: [";gitchore ", ";cchore "]
+    replace: "chore($|$): "
+  - triggers: [";gitci ", ";cci "]
+    replace: "ci($|$): "
+  - triggers: [";gitdocs ", ";cdocs "]
+    replace: "docs($|$): "
+  - triggers: [";gitfeat ", ";cfeat "]
+    replace: "feat($|$): "
+  - triggers: [";gitfix ", ";cfix "]
+    replace: "fix($|$): "
+  - triggers: [";gitperf ", ";cperf "]
+    replace: "perf($|$): "
+  - triggers: [";gitrefactor ", ";crefactor "]
+    replace: "refactor($|$): "
+  - triggers: [";gitstyle ", ";cstyle "]
+    replace: "style($|$): "
+  - triggers: [";gittest ", ";ctest "]
+    replace: "test($|$): "
 # ===== REBASE =====
   - triggers: [";gitreb ", ";greb "]
     replace: "git pull --rebase origin main"
