@@ -1,5 +1,5 @@
 matches:
-# ===== STATUS =====
+# ===== STATUSES =====
   - triggers: [";emojiyes ", ";yes ", ";check ", ";done "]
     replace: "✅"
   - triggers: [";emojino ", ";no ", ";wrong ", ";error "]
@@ -32,7 +32,7 @@ matches:
     replace: "🟢"
   - triggers: [";emojibluecircle ", ";bluecircle ", ";blue "]
     replace: "🔵"
-# ===== DIRECTION =====
+# ===== DIRECTIONS =====
   - triggers: [";emojiarrowup ", ";arrowup ", ";uparrow ", ";upa "]
     replace: "⬆️"
   - triggers: [";emojiarrowdown ", ";arrowdown ", ";downarrow ", ";downa "]
@@ -49,7 +49,7 @@ matches:
     replace: "👈"
   - triggers: [";emojifingerright ", ";fingerright ", ";pointright ", ";rightfinger ", ";rightf "]
     replace: "👉"
-# ===== REACTION =====
+# ===== REACTIONS =====
   - triggers: [";emojithumbsup ", ";thumbsup ", ";tup ", ";tu ", ";like "]
     replace: "👍"
   - triggers: [";emojithumbsdown ", ";thumbsdown ", ";tdown ", ";td ", ";dislike "]
@@ -102,7 +102,7 @@ matches:
     replace: "☠️"
   - triggers: [";emojitombstone ", ";tombstone ", ";rip "]
     replace: "🪦"
-# ===== MOOD =====
+# ===== MOODS =====
   - triggers: [";emojihappy ", ";happy ", ";:) "]
     replace: "🙂"
   - triggers: [";emojisuperhappy ", ";superhappy ", ";shappy ", ";:)) "]
@@ -287,7 +287,7 @@ matches:
     replace: "🧽"
   - triggers: [";emojionion ", ";onion ", ";cebula "]
     replace: "🧅"
-# ===== SPORT =====
+# ===== SPORTS =====
   - triggers: [";emojiwalk ", ";walk ", ";walking "]
     replace: "🚶🏻"
   - triggers: [";emojirun ", ";run ", ";running "]
