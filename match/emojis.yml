@@ -33,21 +33,21 @@ matches:
   - triggers: [";emojibluecircle ", ";bluecircle ", ";blue "]
     replace: "🔵"
 # ===== DIRECTION =====
-  - triggers: [";emojiarrowup ", ";upa "]
+  - triggers: [";emojiarrowup ", ";arrowup ", ";uparrow ", ";upa "]
     replace: "⬆️"
-  - triggers: [";emojiarrowdown ", ";downa "]
+  - triggers: [";emojiarrowdown ", ";arrowdown ", ";downarrow ", ";downa "]
     replace: "⬇️"
-  - triggers: [";emojiarrowleft ", ";lefta "]
+  - triggers: [";emojiarrowleft ", ";arrowleft ", ";leftarrow ", ";lefta "]
     replace: "⬅️"
-  - triggers: [";emojiarrowright ", ";righta "]
+  - triggers: [";emojiarrowright ", ";arrowright ", ";rightarrow ", ";righta "]
     replace: "➡️"
-  - triggers: [";emojifingerup ", ";fingerup ", ";pointup ", ";upf "]
+  - triggers: [";emojifingerup ", ";fingerup ", ";pointup ", ";upfinger ", ";upf "]
     replace: "👆"
-  - triggers: [";emojifingerdown ", ";fingerdown ", ";pointdown ", ";downf "]
+  - triggers: [";emojifingerdown ", ";fingerdown ", ";pointdown ", ";downfinger ", ";downf "]
     replace: "👇"
-  - triggers: [";emojifingerleft ", ";fingerleft ", ";pointleft ", ";leftf "]
+  - triggers: [";emojifingerleft ", ";fingerleft ", ";pointleft ", ";leftfinger ", ";leftf "]
     replace: "👈"
-  - triggers: [";emojifingerright ", ";fingerright ", ";pointright ", ";rightf "]
+  - triggers: [";emojifingerright ", ";fingerright ", ";pointright ", ";rightfinger ", ";rightf "]
     replace: "👉"
 # ===== REACTION =====
   - triggers: [";emojithumbsup ", ";thumbsup ", ";tup ", ";tu ", ";like "]
