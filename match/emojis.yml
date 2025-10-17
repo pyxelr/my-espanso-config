@@ -30,6 +30,25 @@ matches:
     replace: "🔴"
   - triggers: [";emojigreencircle ", ";greencircle ", ";green "]
     replace: "🟢"
+  - triggers: [";emojibluecircle ", ";bluecircle ", ";blue "]
+    replace: "🔵"
+# ===== DIRECTION =====
+  - triggers: [";emojiarrowup ", ";upa "]
+    replace: "⬆️"
+  - triggers: [";emojiarrowdown ", ";downa "]
+    replace: "⬇️"
+  - triggers: [";emojiarrowleft ", ";lefta "]
+    replace: "⬅️"
+  - triggers: [";emojiarrowright ", ";righta "]
+    replace: "➡️"
+  - triggers: [";emojifingerup ", ";fingerup ", ";pointup ", ";upf "]
+    replace: "👆"
+  - triggers: [";emojifingerdown ", ";fingerdown ", ";pointdown ", ";downf "]
+    replace: "👇"
+  - triggers: [";emojifingerleft ", ";fingerleft ", ";pointleft ", ";leftf "]
+    replace: "👈"
+  - triggers: [";emojifingerright ", ";fingerright ", ";pointright ", ";rightf "]
+    replace: "👉"
 # ===== REACTION =====
   - triggers: [";emojithumbsup ", ";thumbsup ", ";tup ", ";tu ", ";like "]
     replace: "👍"
