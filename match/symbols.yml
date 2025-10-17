@@ -18,14 +18,14 @@ matches:
   - triggers: [";rbullet ", ";rbul "]
     replace: "➤"
 # ===== ARROWS =====
-  - triggers: [";left ", ";<< "]
-    replace: "←"
-  - triggers: [";right ", ";>> "]
-    replace: "→"
   - triggers: [";up ", ";^^ "]
     replace: "↑"
   - triggers: [";down ", ";vv "]
     replace: "↓"
+  - triggers: [";left ", ";<< "]
+    replace: "←"
+  - triggers: [";right ", ";>> "]
+    replace: "→"
 # ===== MISC SYMBOLS =====
   - trigger: ";tick "
     replace: "✓"
