@@ -333,7 +333,7 @@ matches:
     replace: "┬─┬ ノ( ゜-゜ノ)"
   - triggers: [";textemodisapproval ", ";tdisapproval ", ";disapproval "]
     replace: "ಠ_ಠ"
-  - triggers: [";textemojiconfused", ";tconfused"]
+  - triggers: [";textemojiconfused ", ";tconfused "]
     replace: "(￢_￢)"
   - triggers: [";textemojikawaii ", ";tkawaii ", ";kawaii "]
     replace: "(｡◕‿‿◕｡)"
@@ -341,7 +341,7 @@ matches:
     replace: "ʕ•ᴥ•ʔ"
   - triggers: [";textemojicat ", ";tcat "]
     replace: "(=^ェ^=)"
-  - triggers: [";textemojilove", ";tlove"]
+  - triggers: [";textemojilove ", ";tlove "]
     replace: "(♥‿♥)"
   - triggers: [";textemojihappy2 ", ";thappy ", ";thappy1 "]
     replace: "o(≧∇≦o)"

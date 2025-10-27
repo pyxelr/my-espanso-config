@@ -9,14 +9,14 @@ matches:
   - triggers: [";pythonformat ", ";pyform "]
     replace: "black --line-length=140 . && isort --profile black . && flake8 --max-line-length=140 . && mypy --strict --ignore-missing-imports ."
 # PRE-COMMIT
-  - triggers: [";pre-commitinstall", ";precinst "]
+  - triggers: [";pre-commitinstall ", ";precinst "]
     replace: "pre-commit install"
-  - triggers: [";pre-commitrun", ";precrun "]
+  - triggers: [";pre-commitrun ", ";precrun "]
     replace: "pre-commit run --all-files"
-  - triggers: [";pre-commitrunone", ";precrunone "]
+  - triggers: [";pre-commitrunone ", ";precrunone "]
     replace: "pre-commit run mypy$|$ --all-files"
   # installation within a Docker container due to a hadolint issue: https://github.com/hadolint/hadolint/issues/886
-  - triggers: [";pre-commitinstallindocker", ";precinstdocker ", ";precinstd "]
+  - triggers: [";pre-commitinstallindocker ", ";precinstdocker ", ";precinstd "]
     replace: |
               wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64 && chmod +x /bin/hadolint;
               pip install pre-commit;
@@ -32,7 +32,7 @@ matches:
     replace: "pip install -r requirements.txt"
   - triggers: [";pipfreeze ", ";pipf "]
     replace: "pip freeze > requirements.txt"
-  - triggers: [";pipupgrade", ";pipup "]
+  - triggers: [";pipupgrade ", ";pipup "]
     replace: "python -m pip install -U "
   - triggers: [";pipupgradepip ", ";pipupp "]
     replace: "python -m pip install -U pip"
@@ -49,13 +49,13 @@ matches:
   - triggers: [";venvdeactivate ", ";venvd "]
     replace: "deactivate"
 # PYENV
-  - triggers: [";pyenvversions", ";pyver "]
+  - triggers: [";pyenvversions ", ";pyver "]
     replace: "pyenv versions"
-  - triggers: [";pyenvglobal", ";pyglob "]
+  - triggers: [";pyenvglobal ", ";pyglob "]
     replace: "pyenv global "
-  - triggers: [";pyenvlocal", ";pyloc "]
+  - triggers: [";pyenvlocal ", ";pyloc "]
     replace: "pyenv local "
-  - triggers: [";pyenvinstall", ";pyinstall "]
+  - triggers: [";pyenvinstall ", ";pyinstall "]
     replace: "pyenv install "
 
 # ===== PACKAGE MANAGERS =====
