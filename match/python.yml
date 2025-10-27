@@ -13,6 +13,8 @@ matches:
     replace: "pre-commit install"
   - triggers: [";pre-commitrun ", ";precrun "]
     replace: "pre-commit run --all-files"
+  - triggers: [";pre-commitrunskipmarkdownlint ", ";precrun2 "]
+    replace: "SKIP=markdownlint$|$ pre-commit run --all-files"
   - triggers: [";pre-commitrunone ", ";precrunone "]
     replace: "pre-commit run mypy$|$ --all-files"
   # installation within a Docker container due to a hadolint issue: https://github.com/hadolint/hadolint/issues/886
