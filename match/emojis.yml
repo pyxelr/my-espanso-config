@@ -209,7 +209,7 @@ matches:
 # ===== BUSINESS/WORK =====
   - triggers: [";emojibriefcase ", ";briefcase ", ";case ", ";business "]
     replace: "💼"
-  - triggers: [";emojinecktie ", ";necktie ", ";suit ", ";job "]
+  - triggers: [";emojinecktie ", ";necktie ", ";tie ", ";suit ", ";job "]
     replace: "👔"
   - triggers: [";emojiinvestment ", ";investment ", ";invest ", ";trendup ", ";trup ", ";tru "]
     replace: "📈"
