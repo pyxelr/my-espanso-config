@@ -1,8 +1,16 @@
 matches:
   - triggers: [";markdownlint ", ";mlint "]
     replace: "markdownlint --fix \"**/*.md\""
+  - triggers: [";markdownimage ", ";mimg "]
+    replace: "![alt text](path/image.png)"
+  - triggers: [";markdownimage ", ";mimg2 ", ";mimg% "] # markdown image with percentage width
+    replace: "![alt text](path/image.png){width=\"$|$%\"}"
+  - triggers: [";markdownimagepx ", ";mimg3 ", ";mimgpx "] # markdown image with pixel dimensions
+    replace: "![alt text](path/image.png){width=\"$|$\" height=\"\"}"
   - triggers: [";markdowninfo ", ";minfo "]
     replace: ">ℹ️ _$|$._"
+  - triggers: [";markdownwarning ", ";mwarning ", ";mwarn "]
+    replace: ">⚠️ _$|$._"
   - triggers: [";markdowntoc ", ";mtoc "] # automatic ToC for GitLab Flavored Markdown
     replace: |
               **Table of Contents**:
