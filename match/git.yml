@@ -38,9 +38,11 @@ matches:
 # ===== REBASE =====
   - triggers: [";gitreb ", ";greb "]
     replace: "git pull --rebase origin main"
-  - triggers: [";gitrebmergetool ", ";grebmergetool "]
+  - triggers: [";gitrebmergetool ", ";grebmergetool ", ";grebm "]
     replace: "git mergetool"
-  - triggers: [";gitrebcont ", ";grebcont "]
+  - triggers: [";gitrebcont ", ";grebcont ", ";grebc "]
     replace: "git rebase --continue"
+  - triggers: [";gitrebabort ", ";grebabort ", ";greba "]
+    replace: "git rebase --abort"
   - triggers: [";gitpushf ", ";gpushf "]
     replace: "git push --force"
