@@ -2,7 +2,7 @@ matches:
 # ===== STATUSES =====
   - triggers: [";emojiyes ", ";yes ", ";check ", ";done "]
     replace: "✅"
-  - triggers: [";emojino ", ";no ", ";wrong ", ";error "]
+  - triggers: [";emojino ", ";no ", ";wrong ", ";error ", ";err "]
     replace: "❌"
   - triggers: [";emojiwarning ", ";warning ", ";warn "]
     replace: "⚠️"
