@@ -28,6 +28,7 @@ List of `match/` files:
 - `languages.yml` - language accents (currently French and German)
 - `markdown.yml` - Markdown snippets
 - `personal.yml` - personal snippets
+- `prompts.yml` - AI prompt templates
 - `python.yml` - Python snippets
 - `symbols.yml` - special characters, e.g. dash, ellipsis, bullet point, left arrow, ...
 
