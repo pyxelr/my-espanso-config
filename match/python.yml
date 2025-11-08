@@ -82,8 +82,6 @@ matches:
     replace: "poetry show"
   - triggers: [";poetrybuild ", ";pbuild "]
     replace: "poetry build"
-  - triggers: [";poetrypublish ", ";ppublish "]
-    replace: "poetry publish"
   - triggers: [";poetryenv ", ";pe "]
     replace: "poetry env info"
   - triggers: [";poetrynew ", ";pnew "]

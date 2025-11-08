@@ -1,49 +1,49 @@
 matches:
 # ===== SUMMARIZATION =====
-  - triggers: [";prsummarize ", ";summarize ", ";summary "]
+  - triggers: [";ppsummarize ", ";summarize ", ";summary "]
     replace: |
       Summarize this text in bullet points. Respond back in a markdown code block:
 
-  - triggers: [";prsummarize2 ", ";summarize2 ", ";summary2 "]
+  - triggers: [";ppsummarize2 ", ";summarize2 ", ";summary2 "]
     replace: |
       Summarize this text in bullet points:
 
 # ===== ANALYSIS & COMPARISON =====
-  - triggers: [";prcompare ", ";compare "]
+  - triggers: [";ppcompare ", ";compare "]
     replace: |
       List the pros and cons of:
 
-  - triggers: [";prcompare2 ", ";compare2 "]
+  - triggers: [";ppcompare2 ", ";compare2 "]
     replace: |
       Compare these options and list pros/cons for each:
 
 # ===== TEXT IMPROVEMENTS =====
-  - triggers: [";prfix ", ";fixtypos "]
+  - triggers: [";ppfix ", ";fixtypos "]
     replace: |
       Fix typos and grammar in this text:
 
-  - triggers: [";prrewrite ", ";rewrite "]
+  - triggers: [";pprewrite ", ";rewrite "]
     replace: |
       Rewrite this text to sound better:
 
-  - triggers: [";prshorten ", ";shorten "]
+  - triggers: [";ppshorten ", ";shorten "]
     replace: |
       Shorten this text while keeping the key points:
 
-  - triggers: [";prexpand ", ";expand "]
+  - triggers: [";ppexpand ", ";expand "]
     replace: |
       Expand this text with more details and examples:
 
 # ===== LEARNING =====
-  - triggers: [";prexplain ", ";explain "]
+  - triggers: [";ppexplain ", ";explain "]
     replace: |
       Explain this concept in simple terms with examples and use cases:
 
 # ===== CODE =====
-  - triggers: [";prcodereview ", ";codereview "]
+  - triggers: [";ppcodereview ", ";codereview "]
     replace: |
       Review this code for bugs, performance issues, and best practices:
 
-  - triggers: [";prrefactor "]
+  - triggers: [";pprefactor "]
     replace: |
       Suggest refactoring improvements for this code:
