@@ -1,49 +1,111 @@
 matches:
 # ===== SUMMARIZATION =====
-  - triggers: [";ppsummarize ", ";summarize ", ";summary "]
-    replace: |
+  - triggers: [";ppsummarize ", ";summarize ", ";summary ", ";sum "]
+    replace: |-
       Summarize this text in bullet points. Respond back in a markdown code block:
 
-  - triggers: [";ppsummarize2 ", ";summarize2 ", ";summary2 "]
-    replace: |
+      """
+      $|$
+      """
+  - triggers: [";ppsummarizen ", ";summarizen ", ";summaryn ", ";sumn "]
+    replace: |-
       Summarize this text in bullet points:
 
+      """
+      $|$
+      """
 # ===== ANALYSIS & COMPARISON =====
   - triggers: [";ppcompare ", ";compare "]
-    replace: |
+    replace: |-
       List the pros and cons of:
 
+      """
+      $|$
+      """
   - triggers: [";ppcompare2 ", ";compare2 "]
-    replace: |
+    replace: |-
       Compare these options and list pros/cons for each:
 
+      """
+      $|$
+      """
 # ===== TEXT IMPROVEMENTS =====
-  - triggers: [";ppfix ", ";fixtypos "]
-    replace: |
+  - triggers: [";ppfix ", ";fixtypos ", ";fixgrammar ", ";fixt ", ";fixg "]
+    replace: |-
+      Fix typos and grammar in this text. Respond back in a markdown code block:
+
+      """
+      $|$
+      """
+  - triggers: [";ppfixn ", ";fixtyposn ", ";fixgrammarn ", ";fixtn ", ";fixgn "]
+    replace: |-
       Fix typos and grammar in this text:
 
-  - triggers: [";pprewrite ", ";rewrite "]
-    replace: |
+      """
+      $|$
+      """
+  - triggers: [";pprewrite ", ";rewrite ", ";rew ", ";ref "]
+    replace: |-
+      Rewrite this text to sound better. Respond back in a markdown code block:
+
+      """
+      $|$
+      """
+  - triggers: [";pprewriten ", ";rewriten ", ";rewn ", ";refn "]
+    replace: |-
       Rewrite this text to sound better:
 
+      """
+      $|$
+      """
   - triggers: [";ppshorten ", ";shorten "]
-    replace: |
+    replace: |-
+      Shorten this text while keeping the key points. Respond back in a markdown code block:
+
+      """
+      $|$
+      """
+  - triggers: [";ppshortenn ", ";shortenn "]
+    replace: |-
       Shorten this text while keeping the key points:
 
+      """
+      $|$
+      """
   - triggers: [";ppexpand ", ";expand "]
-    replace: |
+    replace: |-
+      Expand this text with more details and examples. Respond back in a markdown code block:
+
+      """
+      $|$
+      """
+  - triggers: [";ppexpandn ", ";expandn "]
+    replace: |-
       Expand this text with more details and examples:
 
+      """
+      $|$
+      """
 # ===== LEARNING =====
   - triggers: [";ppexplain ", ";explain "]
-    replace: |
+    replace: |-
       Explain this concept in simple terms with examples and use cases:
 
+      """
+      $|$
+      """
 # ===== CODE =====
   - triggers: [";ppcodereview ", ";codereview "]
-    replace: |
+    replace: |-
       Review this code for bugs, performance issues, and best practices:
 
-  - triggers: [";pprefactor "]
-    replace: |
+      ```
+      $|$
+      ```
+  - triggers: [";pprefactor ", ";refactorcode "]
+    replace: |-
       Suggest refactoring improvements for this code:
+
+      ```
+      $|$
+      ```

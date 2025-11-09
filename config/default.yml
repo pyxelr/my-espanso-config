@@ -2,3 +2,4 @@
 
 search_shortcut: CMD+SHIFT+SPACE
 show_notifications: false
+backend: clipboard

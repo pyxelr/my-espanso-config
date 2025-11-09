@@ -72,7 +72,7 @@ matches:
     replace: "°"
   - trigger: ";pii "
     replace: "π"
-  - trigger: ";sum "
+  - triggers: [";sigma ", ";summation "]
     replace: "∑"
   - trigger: ";integral "
     replace: "∫"
