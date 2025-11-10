@@ -1,6 +1,9 @@
 # My espanso config
 
-The configuration I am using in [espanso](https://espanso.org/) (open-source text-expander) to quickly type/run different commands on macOS.
+My configuration for [espanso](https://espanso.org/) (open-source text-expander) to quickly type/run different commands.
+
+> [!NOTE]
+> _This repository contains my macOS configuration and excludes private triggers. I also maintain a separate Windows-based configuration. The [`filter_os`](https://espanso.org/docs/configuration/app-specific-configurations/#filters) option isn't used to combine OS-specific configs because it conflicts with app-specific configurations._
 
 ## Usage
 
