@@ -1,4 +1,3 @@
-# https://espanso.org/docs/
 matches:
 # ===== GENERAL =====
   - trigger: ";date " # print the current date
