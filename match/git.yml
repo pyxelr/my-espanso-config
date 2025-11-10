@@ -3,6 +3,7 @@ matches:
   - triggers: [";gitpullall ", ";gpullall ", ";gpa "] # pull all repositories in ~/REPOS/
     replace: |-
               cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
+    force_mode: keys
   - triggers: [";gitpickbranch ", ";gbranch ", ";gb "]
     replace: "git checkout $(git branch -a | sed 's|remotes/origin/||' | sed 's|^[* ]*||' | sort -u | fzf)"
   - triggers: [";gitcommitnoverify ", ";gcnoverify ", ";gcnv ", ";cnv "]
@@ -15,6 +16,7 @@ matches:
       type(scope): description
       
       build|chore|ci|docs|feat|fix|perf|refactor|style|test
+    force_mode: clipboard
   - triggers: [";gitbuild ", ";cbuild "]
     replace: "build($|$): "
   - triggers: [";gitchore ", ";cchore "]

@@ -18,6 +18,7 @@ matches:
               [TOC]
 
               ---
+    force_mode: clipboard
   - triggers: [";markdownsection ", ";msec "] # collapsible Markdown section
     replace: |
               <details>
@@ -30,3 +31,4 @@ matches:
               XYZ
 
               </details>
+    force_mode: clipboard

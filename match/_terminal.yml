@@ -105,11 +105,16 @@ matches:
 # https://github.com/yt-dlp/yt-dlp
   - trigger: ";yt " # download audio
     replace: "yt-dlp --add-metadata --parse-metadata \"%(artists,uploader)l:%(meta_artist)s\" --embed-thumbnail -o \"%(artists,uploader)l - %(title)s.%(ext)s\" "
+    force_mode: keys
   - trigger: ";ytm " # extract mp3 from video 
     replace: "yt-dlp --embed-thumbnail --audio-quality 320k --extract-audio --no-part --audio-format mp3 --add-metadata -o \"%(uploader)s - %(title)s.%(ext)s\" "
+    force_mode: keys
   - trigger: ";ytmt " # extract mp3 from video section 
     replace: "yt-dlp --embed-thumbnail --audio-quality 320k --extract-audio --no-part --audio-format mp3 --add-metadata --download-sections \"*01:00-02:00\" --force-keyframes-at-cuts -o \"%(uploader)s - %(title)s.%(ext)s\" "
+    force_mode: keys
   - trigger: ";ytv " # download video of best quality
     replace: "yt-dlp -f bestvideo -ciw --write-thumbnail -o \"%(uploader)s - %(title)s.%(ext)s\" "
+    force_mode: keys
   - trigger: ";ytup " # upgrade yt-dlp
     replace: "python -m pip install -U \"yt-dlp[default]\""
+    force_mode: keys

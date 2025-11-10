@@ -3,6 +3,7 @@ matches:
     replace: |-
               Kind regards,
               ...
+    force_mode: clipboard
   - triggers: [";hello ", ";hi "]
     replace: |-
               Hi …,
@@ -10,3 +11,4 @@ matches:
 
               Kind regards,
               ...
+    force_mode: clipboard
