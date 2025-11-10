@@ -7,6 +7,8 @@ matches:
 
 # ===== FORMATTING =====
   - triggers: [";pythonformat ", ";pyform "]
+    replace: "ruff format . && ruff check --fix . && mypy --strict --ignore-missing-imports ."
+  - triggers: [";pythonformat2 ", ";pyform2 "]
     replace: "black --line-length=140 . && isort --profile black . && flake8 --max-line-length=140 . && mypy --strict --ignore-missing-imports ."
 # PRE-COMMIT
   - triggers: [";pre-commitinstall ", ";precinst "]
