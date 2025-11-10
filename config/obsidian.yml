@@ -1,4 +1,4 @@
-filter_title: "Obsidian"
+filter_exec: "Obsidian.app"
 
 includes:
   - "../match/_obsidian.yml"
