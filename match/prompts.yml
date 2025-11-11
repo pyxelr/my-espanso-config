@@ -17,17 +17,17 @@ matches:
       """
     force_mode: clipboard
 # ===== ANALYSIS & COMPARISON =====
-  - triggers: [";ppcompare ", ";compare "]
+  - triggers: [";ppcompare ", ";compare ", ";comp "]
     replace: |-
-      List the pros and cons of:
+      Compare in a table format. Below the table, summarize key differences in bullet points:
 
       """
       $|$
       """
     force_mode: clipboard
-  - triggers: [";ppcompare2 ", ";compare2 "]
+  - triggers: [";ppcompare2 ", ";compare2 ", ";comp2 "]
     replace: |-
-      Compare these options and list pros/cons for each:
+      Compare these options by listing pros/cons for each. Below, summarize the key differences in bullet points:
 
       """
       $|$
