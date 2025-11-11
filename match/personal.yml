@@ -1,4 +1,5 @@
 matches:
+# ===== REGARDS =====
   - triggers: [";regards ", ";kr "]
     replace: |-
               Kind regards,
@@ -6,9 +7,12 @@ matches:
     force_mode: clipboard
   - triggers: [";hello ", ";hi "]
     replace: |-
-              Hi …,
-              …
+              Hi ...,
+              ...
 
               Kind regards,
               ...
     force_mode: clipboard
+# ===== WEB TOOLS =====
+  - triggers: [";waybackmachine ", ";wayback ", ";wbm "]
+    replace: "https://web.archive.org/web/"
