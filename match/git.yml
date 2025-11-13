@@ -2,8 +2,12 @@ matches:
 # ===== GENERAL =====
   - triggers: [";gitpullall ", ";gpullall ", ";gpa "] # pull all repositories in ~/REPOS/
     replace: |-
-              cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull
-    force_mode: keys
+              cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' | xargs -I{} sh -c 'echo "=== {} ===" && git -C {} pull'
+    force_mode: clipboard
+  - triggers: [";gitpullallfast ", ";gpullallfast ", ";gpaf "] # pull all repositories in parallel in ~/REPOS/
+    replace: |-
+              cd ~/REPOS/ && find . -name ".git" -type d | sed 's/\/.git//' | xargs -P10 -I{} sh -c 'echo "=== {} ===" && git -C {} pull'
+    force_mode: clipboard
   - triggers: [";gitpickbranch ", ";gbranch ", ";gb "]
     replace: "git checkout $(git branch -a | sed 's|remotes/origin/||' | sed 's|^[* ]*||' | sort -u | fzf)"
   - triggers: [";gitcommitnoverify ", ";gcnoverify ", ";gcnv ", ";cnv "]
