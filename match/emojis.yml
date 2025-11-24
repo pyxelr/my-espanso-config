@@ -33,13 +33,13 @@ matches:
   - triggers: [";emojibluecircle ", ";bluecircle ", ";blue "]
     replace: "🔵"
 # ===== DIRECTIONS =====
-  - triggers: [";emojiarrowup ", ";arrowup ", ";uparrow ", ";upa "]
+  - triggers: [";emojiarrowup ", ";arrowup ", ";uparrow ", ";upa ", ";up2 "]
     replace: "⬆️"
-  - triggers: [";emojiarrowdown ", ";arrowdown ", ";downarrow ", ";downa "]
+  - triggers: [";emojiarrowdown ", ";arrowdown ", ";downarrow ", ";downa ", ";down2 "]
     replace: "⬇️"
-  - triggers: [";emojiarrowleft ", ";arrowleft ", ";leftarrow ", ";lefta "]
+  - triggers: [";emojiarrowleft ", ";arrowleft ", ";leftarrow ", ";lefta ", ";left2 "]
     replace: "⬅️"
-  - triggers: [";emojiarrowright ", ";arrowright ", ";rightarrow ", ";righta "]
+  - triggers: [";emojiarrowright ", ";arrowright ", ";rightarrow ", ";righta ", ";right2 "]
     replace: "➡️"
   - triggers: [";emojifingerup ", ";fingerup ", ";pointup ", ";upfinger ", ";upf "]
     replace: "👆"
