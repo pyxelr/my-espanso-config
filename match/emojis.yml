@@ -149,6 +149,8 @@ matches:
     replace: "😉"
   - triggers: [";emojiupsidedown ", ";upsidedown ", ";udown ", ";(: "]
     replace: "🙃"
+  - triggers: [";emojismirking ", ";smirking ", ";smirk "]
+    replace: "😏"
   - triggers: [";emojiconfused ", ";confused "]
     replace: "😕"
   - triggers: [";emojiweird ", ";weird ", ";raisedeyebrow ", ";suspicious ", ";sus "]
