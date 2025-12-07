@@ -26,6 +26,8 @@ matches:
     replace: "←"
   - triggers: [";right ", ";>> "]
     replace: "→"
+  - triggers: [";leftright ", ";<<>> "]
+    replace: "↔"
 # ===== MISC SYMBOLS =====
   - trigger: ";tick "
     replace: "✓"

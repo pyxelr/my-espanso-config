@@ -33,14 +33,16 @@ matches:
   - triggers: [";emojibluecircle ", ";bluecircle ", ";blue "]
     replace: "🔵"
 # ===== DIRECTIONS =====
-  - triggers: [";emojiarrowup ", ";arrowup ", ";uparrow ", ";upa ", ";up2 "]
+  - triggers: [";emojiarrowup ", ";arrowup ", ";uparrow ", ";upa ", ";up2 ", ";^^2 "]
     replace: "⬆️"
-  - triggers: [";emojiarrowdown ", ";arrowdown ", ";downarrow ", ";downa ", ";down2 "]
+  - triggers: [";emojiarrowdown ", ";arrowdown ", ";downarrow ", ";downa ", ";down2 ", ";vv2 "]
     replace: "⬇️"
-  - triggers: [";emojiarrowleft ", ";arrowleft ", ";leftarrow ", ";lefta ", ";left2 "]
+  - triggers: [";emojiarrowleft ", ";arrowleft ", ";leftarrow ", ";lefta ", ";left2 ", ";<<2 "]
     replace: "⬅️"
-  - triggers: [";emojiarrowright ", ";arrowright ", ";rightarrow ", ";righta ", ";right2 "]
+  - triggers: [";emojiarrowright ", ";arrowright ", ";rightarrow ", ";righta ", ";right2 ", ";>>2 "]
     replace: "➡️"
+  - triggers: [";emojiarrowleftright ", ";arrowleftright ", ";leftrightarrow ", ";leftrighta ", ";leftright2 ", ";<<>>2 "]
+    replace: "↔️"
   - triggers: [";emojifingerup ", ";fingerup ", ";pointup ", ";upfinger ", ";upf "]
     replace: "👆"
   - triggers: [";emojifingerdown ", ";fingerdown ", ";pointdown ", ";downfinger ", ";downf "]
