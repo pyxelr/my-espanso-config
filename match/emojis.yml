@@ -217,9 +217,9 @@ matches:
     replace: "💼"
   - triggers: [";emojinecktie ", ";necktie ", ";tie ", ";suit ", ";job "]
     replace: "👔"
-  - triggers: [";emojiinvestment ", ";investment ", ";invest ", ";trendup ", ";trup ", ";tru "]
+  - triggers: [";emojitrendup ", ";trendup ", ";trup ", ";tru ", ";investmentup ", ";investment ", ";invest ", ";iup "]
     replace: "📈"
-  - triggers: [";emojitrenddown ", ";trenddown ", ";trdown ", ";trd "]
+  - triggers: [";emojitrenddown ", ";trenddown ", ";trdown ", ";trd ", ";investmentdown ", ";investdown ", ";idown "]
     replace: "📉"
   - triggers: [";emojibulb ", ";bulb ", ";idea "]
     replace: "💡"
