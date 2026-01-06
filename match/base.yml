@@ -1,9 +1,16 @@
 matches:
 # ===== GENERAL =====
-  - trigger: ";date " # print the current date
+  - triggers: [";date ", ";dt "] # print the current date
     replace: "{{mydate}}"
     vars:
       - name: mydate
         type: date
         params:
           format: "%Y-%m-%d"
+  - triggers: [";datetime ", ";datet ", ";dtime ", ";dt2 "] # print the current date with time
+    replace: "{{mydatetime}}"
+    vars:
+      - name: mydatetime
+        type: date
+        params:
+          format: "%Y-%m-%d (%H:%M:%S)"
