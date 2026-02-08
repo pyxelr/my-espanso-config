@@ -2,7 +2,8 @@ matches:
 # ===== SUMMARIZATION =====
   - triggers: [";ppsummarize ", ";summarize ", ";summary ", ";sum "]
     replace: |-
-      Summarize this text in bullet points. Respond back in a markdown code block:
+      Summarize this text in bullet points. Respond back in a markdown code block.
+      Below the code block, list 1-4 most relevant tags.
 
       """
       $|$
