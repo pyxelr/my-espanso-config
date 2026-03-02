@@ -1,4 +1,6 @@
 matches:
+  - trigger: ";`` "
+    replace: "``````"
   - triggers: [";markdownlint ", ";mlint "]
     replace: "markdownlint --fix \"**/*.md\""
   - triggers: [";markdownimage ", ";mimg "]
