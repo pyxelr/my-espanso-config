@@ -1,5 +1,5 @@
 matches:
-  - trigger: ";`` "
+  - triggers: [";`` ", ";``` "]
     replace: "``````"
   - triggers: [";markdownlint ", ";mlint "]
     replace: "markdownlint --fix \"**/*.md\""
