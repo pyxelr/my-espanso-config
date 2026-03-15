@@ -12,7 +12,7 @@ matches:
     replace: "➕"
   - triggers: [";emojinew ", ";new "]
     replace: "🆕"
-  - triggers: [";emojirefresh ", ";refresh "]
+  - triggers: [";emojirefresh ", ";refresh ", ";repeat "]
     replace: "🔄"
   - triggers: [";emojistar ", ";star ", ";important ", ";favorite ", ";fav ", ";p3 "]
     replace: "⭐"
