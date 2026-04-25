@@ -62,8 +62,10 @@ matches:
     replace: "√"
   - triggers: [";infinity ", ";inf ", ";forever "]
     replace: "∞"
-  - trigger: ";plusminus "
+  - triggers: [";plusminus ", ";+- "]
     replace: "±"
+  - triggers: [";minusplus ", ";-+ "]
+    replace: "∓"
   - triggers: [";multiply ", ";mult "]
     replace: "×"
   - triggers: [";dot ", ";middot "]
