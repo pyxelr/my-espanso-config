@@ -109,6 +109,19 @@ matches:
       """
     force_mode: clipboard
 # ===== CODE =====
+  - triggers: [";ppmrreview ", ";mrreview ", ";ppprreview ", ";prreview ", ";mrr ", ";prr "]
+    replace: |-
+      Review the `` branch merging into `main` and propose comments I should raise.
+
+      For each comment, mention the filename and line numbers it refers to.
+      Group comments by severity: Blockers, Suggestions, Nits.
+
+      MR description
+
+      ```
+
+      ```
+    force_mode: clipboard
   - triggers: [";ppcodereview ", ";codereview "]
     replace: |-
       Review this code for bugs, performance issues, and best practices:
