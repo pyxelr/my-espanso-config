@@ -55,6 +55,8 @@ matches:
     replace: "find . -type f -name '*.DS_Store' -ls -delete"
   - triggers: [";pbpaste ", ";pbp "]
     replace: "pbpaste | tee \"$|$\""
+  - triggers: [";killaudio ", ";killa ", ";audiokill ", ";akill "] # fix audio by killing coreaudiod
+    replace: "sudo pkill -9 coreaudiod"
 
 # ===== BASH =====
   - triggers: [";sourceenv ", ";senv ", ";env "] # source .env file
