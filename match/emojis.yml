@@ -43,13 +43,13 @@ matches:
     replace: "➡️"
   - triggers: [";emojiarrowleftright ", ";arrowleftright ", ";leftrightarrow ", ";leftrighta ", ";leftright2 ", ";<<>>2 "]
     replace: "↔️"
-  - triggers: [";emojifingerup ", ";fingerup ", ";pointup ", ";upfinger ", ";upf "]
+  - triggers: [";emojifingerup ", ";fingerup ", ";pointup ", ";upfinger ", ";ufinger ", ";upf ", ";uhand ", ";^^3 "]
     replace: "👆"
-  - triggers: [";emojifingerdown ", ";fingerdown ", ";pointdown ", ";downfinger ", ";downf "]
+  - triggers: [";emojifingerdown ", ";fingerdown ", ";pointdown ", ";downfinger ", ";dfinger ", ";downf ", ";dhand ", ";vv3 "]
     replace: "👇"
-  - triggers: [";emojifingerleft ", ";fingerleft ", ";pointleft ", ";leftfinger ", ";leftf "]
+  - triggers: [";emojifingerleft ", ";fingerleft ", ";pointleft ", ";leftfinger ", ";lfinger ", ";leftf ", ";lhand ", ";<<3 "]
     replace: "👈"
-  - triggers: [";emojifingerright ", ";fingerright ", ";pointright ", ";rightfinger ", ";rightf "]
+  - triggers: [";emojifingerright ", ";fingerright ", ";pointright ", ";rightfinger ", ";rfinger ", ";rightf ", ";rhand ", ";>>3 "]
     replace: "👉"
 # ===== REACTIONS =====
   - triggers: [";emojithumbsup ", ";thumbsup ", ";tup ", ";tu ", ";like "]
