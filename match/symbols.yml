@@ -6,6 +6,8 @@ matches:
     replace: "—"
   - triggers: [";ellipsis ", ";... "]
     replace: "…"
+  - triggers: [";verticaldots ", ";vdots ", ";v... "]
+    replace: "⋮"
   - trigger: ";quotepl "
     replace: "„”"
   - trigger: ";quoteen "
