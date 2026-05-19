@@ -98,6 +98,10 @@ matches:
     replace: "🤝"
   - triggers: [";emojibow ", ";bow "]
     replace: "🙇🏻‍♂️"
+  - triggers: [";emojiluck ", ";luck ", ";clover "]
+    replace: "🍀"
+  - triggers: [";emojiluck2 ", ";luck2 ", ";crossedfingers ", ";fingerscrossed "]
+    replace: "🤞"
   - triggers: [";emojiskull ", ";skull ", ";rip3 "]
     replace: "💀"
   - triggers: [";emojiskullcrossbones ", ";skullcrossbones ", ";crossbones ", ";skull2 ", ";rip2 "]
