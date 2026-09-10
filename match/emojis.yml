@@ -297,6 +297,8 @@ matches:
     replace: "🧽"
   - triggers: [";emojionion ", ";onion ", ";cebula "]
     replace: "🧅"
+  - triggers: [";emojisunset ", ";sunset ", ";emojisunrise ", ";sunrise "]
+    replace: "🌅"
 # ===== SPORTS =====
   - triggers: [";emojiwalk ", ";walk ", ";walking "]
     replace: "🚶🏻"
