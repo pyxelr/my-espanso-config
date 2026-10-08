@@ -93,11 +93,17 @@ matches:
 # https://github.com/Canop/broot
   - triggers: [";broot ", ";treee "]
     replace: "br -c :pt"
+# https://github.com/anthropics/claude-code
+  - triggers: [";claudeupdate ", ";claudeup ", ";ccup "]
+    replace: "claude update"
 # https://github.com/ogham/exa
   - triggers: [";exa ", ";lisl "]
     replace: "exa -hla --icons"
   - triggers: [";exatime ", ";list "]
     replace: "exa -hlas time --icons"
+# herdr
+  - triggers: [";herdrrestart ", ";herdrre ", ";hrdr ", ";hr "] # restart herdr server so every space picks up upgraded tools (e.g. Claude Code)
+    replace: "herdr server stop; until ! herdr status server 2>&1 | grep -q 'status: running'; do sleep 0.5; done; herdr"
 # https://github.com/andornaut/keylight
 ## get IP (e.g. 192.168.1.100) by typing 'keylight' in terminal
   - triggers: [";keylighton ", ";kon "]
